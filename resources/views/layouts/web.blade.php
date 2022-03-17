@@ -115,7 +115,7 @@
   <!-- SyoTimer -->
   <script src="{{ asset('plugins/syotimer/jquery.syotimer.min.js') }}"></script>
   <!-- Google Mapl -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb5KGfWAckxCGpoBYfAxNvPuiez5r_rJw"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAguZAbGQJ7Ljbz9os63jTWwhq0R0s858E"></script>
   <script src="{{ asset('plugins/map/gmap.js') }}"></script> 
   <!-- Custom Script -->
   <script src="{{ asset('js/custom.js') }}"></script>
