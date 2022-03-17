@@ -45,12 +45,19 @@
 
 <footer class="footer-main">
     <div class="container">
-      <div class="row">
+      <div class="row d-flex align-items-center">
+          <div class="col-md-6">
+              <h3 class="text-white">IECTIS 2022</h3>
+              <p class="text-white">International Conference of Technology, Energy & Information System</p>
+          </div>
+          <div class="col-md-6">
+              <p class="text-white" style="text-align: right">23 Feb - 19 September 2022 | Jakarta, Indonesia (ID)</p>
+          </div>
+      </div>
+      <hr class="footer-hr"/>
+      <div class="row mt-5">
         <div class="col-md-12">
           <div class="block text-center">
-            <div class="footer-logo">
-              <img src="images/footer-logo.png" alt="logo" class="img-fluid">
-            </div>
             <ul class="social-links-footer list-inline">
               <li class="list-inline-item">
                 <a href="#"><i class="fa fa-facebook"></i></a>
