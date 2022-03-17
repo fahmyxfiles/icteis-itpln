@@ -1,1435 +1,1157 @@
 <x-web-layout>
-    <!-- hero section -->
-    <div class="hero-slider-active">
-        <div class="hero-area">
-            <div class="hero_shapes">
-                <img src="assets/images/vec_1.png" alt="" class="vec_1 item-rotate">
-                <img src="assets/images/vec_2.png" alt="" class="vec_2 item-animateOne">
-                <img src="assets/images/vec_3.png" alt="" class="vec_3">
-                <img src="assets/images/vec_4.png" alt="" class="vec_4">
-                <img src="assets/images/vec_5.png" alt="" class="vec_5">
-                <img src="assets/images/vec_6.png" alt="" class="vec_6 item-animateTwo">
-            </div>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <div class="hero-left">
-                            <h1 class="animate3"><span>THE 1ST</span><br>
-                                ICTEIS</h1>
-                            <p class="animate1 margin-top-40">International Conference of Technology, Energy, and Information System </p>
-                            <div class="btn_wrapper animate1 margin-top-30">
-                                <a href="#" class="btn1">submit paper</a>
-                                <a href="#" class="btn2">call for paper</a>
-                            </div>
-                            <div class="vdo_pop">
-                                <a class="popup-link" href="{{ asset('https://www.youtube.com/watch?v=9xwazD5SyVg') }}"><span
-                                        class="item-ripple"><i class="fas fa-play"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 d-none d-lg-block">
-                        <div class="hero-right">
-                            <img src="assets/images/hero_img1.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-area">
-            <div class="hero_shapes">
-                <img src="assets/images/vec_1.png" alt="" class="vec_1 item-rotate">
-                <img src="assets/images/vec_2.png" alt="" class="vec_2 item-animateOne">
-                <img src="assets/images/vec_3.png" alt="" class="vec_3">
-                <img src="assets/images/vec_4.png" alt="" class="vec_4">
-                <img src="assets/images/vec_5.png" alt="" class="vec_5">
-                <img src="assets/images/vec_6.png" alt="" class="vec_6 item-animateTwo">
-            </div>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <div class="hero-left">
-                            <h1 class="animate3"><span>New Events</span>
-                                Available</h1>
-                            <p class="animate1 margin-top-40">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod
-                                tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. facilisis. </p>
-                            <div class="btn_wrapper animate1 margin-top-30">
-                                <a href="#" class="btn1">get tickets</a>
-                                <a href="#" class="btn2">see schedule</a>
-                            </div>
-                            <div class="vdo_pop">
-                                <a class="popup-link" href="{{ asset('https://www.youtube.com/watch?v=9xwazD5SyVg') }}"><span
-                                        class="item-ripple"><i class="fas fa-play"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 d-none d-lg-block">
-                        <div class="hero-right">
-                            <img src="assets/images/hero_img1.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-area">
-            <div class="hero_shapes">
-                <img src="assets/images/vec_1.png" alt="" class="vec_1 item-rotate">
-                <img src="assets/images/vec_2.png" alt="" class="vec_2 item-animateOne">
-                <img src="assets/images/vec_3.png" alt="" class="vec_3">
-                <img src="assets/images/vec_4.png" alt="" class="vec_4">
-                <img src="assets/images/vec_5.png" alt="" class="vec_5">
-                <img src="assets/images/vec_6.png" alt="" class="vec_6 item-animateTwo">
-            </div>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <div class="hero-left">
-                            <h1 class="animate3"><span> Main Events</span>
-                                of the Autumn</h1>
-                            <p class="animate1 margin-top-40">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do
-                                eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. facilisis. </p>
-                            <div class="btn_wrapper animate1 margin-top-30">
-                                <a href="#" class="btn1">get tickets</a>
-                                <a href="#" class="btn2">see schedule</a>
-                            </div>
-                            <div class="vdo_pop">
-                                <a class="popup-link" href="https://www.youtube.com/watch?v=9xwazD5SyVg"><span
-                                        class="item-ripple"><i class="fas fa-play"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 d-none d-lg-block">
-                        <div class="hero-right">
-                            <img src="assets/images/hero_img1.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--============================
+    =            Banner            =
+    =============================-->
 
-    <!-- counter area -->
-    <div class="counter-area padding-bottom-120">
+    <section class="banner bg-banner-one overlay">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row">
                 <div class="col-lg-12">
-                    <div class="row counter_wrapper">
-                        <div class="col-6 col-sm-4">
-                            <div class="single-counter">
-                                <h3>28 Mar - 19 Aug 2022</h3>
-                                <h6>Schedule</h6>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4">
-                            <div class="single-counter">
-                                <h3>Jakarta, Indonesia (ID)</h3>
-                                <h6>Location</h6>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4">
-                            <div class="single-counter">
-                                <h3>Institut Teknologi PLN</h3>
-                                <h6>Organizer</h6>
-                            </div>
-                        </div>
+                    <!-- Content Block -->
+                    <div class="block">
+                        <!-- Coundown Timer -->
+                        <div class="timer"></div>
+                        <h1>Business</h1>
+                        <h2>Conference 2020</h2>
+                        <h6>02-05 July 2020 California</h6>
+                        <!-- Action Button -->
+                        <a href="#" class="btn btn-white-md">get ticket now</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+        
+    <!--====  End of Banner  ====-->
 
-    <!-- event promo -->
-    <div class="event-promo padding-bottom-90">
-        <div class="ev_shapes">
-            <img src="assets/images/e_vec1.png" alt="" class="vec_1">
-            <img src="assets/images/e_vec2.png" alt="" class="vec_2">
-            <img src="assets/images/e_vec3.png" alt="" class="vec_3">
-            <img src="assets/images/e_vec4.png" alt="" class="vec_4 item-animateOne">
-            <img src="assets/images/e_vec5.png" alt="" class="vec_5 item-animateTwo">
-            <img src="assets/images/e_vec6.png" alt="" class="vec_6 d-none d-sm-block">
-            <img src="assets/images/e_vec7.png" alt="" class="vec_7 item-animateOne">
-            <img src="assets/images/e_vec8.png" alt="" class="vec_8">
-            <img src="assets/images/vec_2.png" alt="" class="vec_9 item-animateTwo">
-        </div>
+    <!--===========================
+    =            About            =
+    ============================-->
+
+    <section class="section about">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="ep_left">
-                        <div class="row">
-                            <div class="col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                                <div class="single-ep">
-                                    <div class="icon-box">
-                                        <img src="assets/images/eicon1.png" alt="">
-                                    </div>
-                                    <div class="cont-box">
-                                        <h4>Event Conferences</h4>
-                                        <p class="margin-top-20">Lorem ipsum easy consectetur magna aliqua ala ma as.
-                                        </p>
-                                        <a class="margin-top-30" href="#">learn more</a>
-                                    </div>
-                                </div>
-                                <div class="single-ep">
-                                    <div class="icon-box">
-                                        <img src="assets/images/eicon2.png" alt="">
-                                    </div>
-                                    <div class="cont-box">
-                                        <h4>Event Conferences</h4>
-                                        <p class="margin-top-20">Lorem ipsum easy consectetur magna aliqua ala ma as.
-                                        </p>
-                                        <a class="margin-top-30" href="#">learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12 d-md-flex align-items-center wow fadeInUp"
-                                data-wow-delay=".4s">
-                                <div class="single-ep">
-                                    <div class="icon-box">
-                                        <img src="assets/images/eicon3.png" alt="">
-                                    </div>
-                                    <div class="cont-box">
-                                        <h4>Event Conferences</h4>
-                                        <p class="margin-top-20">Lorem ipsum easy consectetur magna aliqua ala ma as.
-                                        </p>
-                                        <a class="margin-top-30" href="#">learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 align-self-center">
+                    <div class="image-block bg-about">
+                        <img class="img-fluid" src="{{ asset('images/speakers/featured-speaker.jpg') }}" alt="">
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="ep_right">
-                        <div class="common-title">
-                            <h2>Why You Should Join Event?</h2>
-                            <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Quis ip suspendisse ultrices gravida. Risus commodo
+                <div class="col-lg-8 col-md-6 align-self-center">
+                    <div class="content-block">
+                        <h2>About The <span class="alternate">Eventfy</span></h2>
+                        <div class="description-one">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco.
                             </p>
-                            <a href="#" class="btn1 margin-top-10">join event</a>
+                        </div>
+                        <div class="description-two">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt ut labore et dolore magna aliq enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+                        </div>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn btn-main-md">Buy ticket</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn btn-transparent-md">Read more</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====  End of About  ====-->
+
+    <!--==============================
+    =            Speakers            =
+    ===============================-->
+
+    <section class="section speakers bg-speaker overlay-lighter">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Title -->
+                    <div class="section-title white">
+                        <h3>Who <span class="alternate">Speaking?</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- Speaker 1 -->
+                    <div class="speaker-item">
+                        <div class="image">
+                            <img src="{{ asset('images/speakers/speaker-one.jpg') }}" alt="speaker" class="img-fluid">
+                            <div class="primary-overlay"></div>
+                            <div class="socials">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5><a href="single-speaker.html">Johnathan Franco</a></h5>
+                            <p>Project Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- Speaker 2 -->
+                    <div class="speaker-item">
+                        <div class="image">
+                            <img src="{{ asset('images/speakers/speaker-two.jpg') }}" alt="speaker" class="img-fluid">
+                            <div class="primary-overlay"></div>
+                            <div class="socials">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5><a href="single-speaker.html">Johnathan Franco</a></h5>
+                            <p>Project Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- Speaker 3 -->
+                    <div class="speaker-item">
+                        <div class="image">
+                            <img src="{{ asset('images/speakers/speaker-three.jpg') }}" alt="speaker" class="img-fluid">
+                            <div class="primary-overlay"></div>
+                            <div class="socials">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5><a href="single-speaker.html">Johnathan Franco</a></h5>
+                            <p>Project Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- Speaker 4 -->
+                    <div class="speaker-item">
+                        <div class="image">
+                            <img src="{{ asset('images/speakers/speaker-four.jpg') }}" alt="speaker" class="img-fluid">
+                            <div class="primary-overlay"></div>
+                            <div class="socials">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5><a href="single-speaker.html">Johnathan Franco</a></h5>
+                            <p>Project Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- Speaker 5 -->
+                    <div class="speaker-item">
+                        <div class="image">
+                            <img src="{{ asset('images/speakers/speaker-five.jpg') }}" alt="speaker" class="img-fluid">
+                            <div class="primary-overlay"></div>
+                            <div class="socials">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5><a href="single-speaker.html">Johnathan Franco</a></h5>
+                            <p>Project Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- Speaker 1 -->
+                    <div class="speaker-item">
+                        <div class="image">
+                            <img src="{{ asset('images/speakers/speaker-six.jpg') }}" alt="speaker" class="img-fluid">
+                            <div class="primary-overlay"></div>
+                            <div class="socials">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5><a href="single-speaker.html">Johnathan Franco</a></h5>
+                            <p>Project Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- Speaker 7 -->
+                    <div class="speaker-item">
+                        <div class="image">
+                            <img src="{{ asset('images/speakers/speaker-five.jpg') }}" alt="speaker" class="img-fluid">
+                            <div class="primary-overlay"></div>
+                            <div class="socials">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5><a href="single-speaker.html">Johnathan Franco</a></h5>
+                            <p>Project Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- Speaker 8 -->
+                    <div class="speaker-item">
+                        <div class="image">
+                            <img src="{{ asset('images/speakers/speaker-six.jpg') }}" alt="speaker" class="img-fluid">
+                            <div class="primary-overlay"></div>
+                            <div class="socials">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5><a href="single-speaker.html">Johnathan Franco</a></h5>
+                            <p>Project Manager</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- features area -->
-    <div class="fea-area padding-top-120 padding-bottom-90">
-        <div class="fea-shapes">
-            <img src="assets/images/e_vec3.png" alt="" class="vec_1">
-            <img src="assets/images/e_vec5.png" alt="" class="vec_2">
-        </div>
+    <!--====  End of Speakers  ====-->
+
+    <!--==============================
+    =            Schedule            =
+    ===============================-->
+
+    <section class="section schedule">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 wow slideInLeft">
-                    <div class="fea-left">
-                        <div class="common-title">
-                            <h2>what is business startup Conference</h2>
-                            <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmodpor incididunt ut
-                                labore et dolore magna aliqua. Quis ipsum suspendi ultrices gravida Risus commodo.</p>
-                            <ul class="margin-top-20">
-                                <li>great speakers</li>
-                                <li>best participants</li>
-                                <li>interactive floor plans</li>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3>Event <span class="alternate">Schedule</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="schedule-tab">
+                        <ul class="nav nav-pills text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#nov20" data-toggle="pill">
+                                Day-01
+                                <span>20 November 2020</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nov21" data-toggle="pill">
+                                Day-02
+                                <span>21 November 2020</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nov22" data-toggle="pill">
+                                Day-03
+                                <span>22 November 2020</span>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="schedule-contents bg-schedule">
+                        <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active schedule-item" id="nov20">
+                            <!-- Headings -->
+                            <ul class="m-0 p-0">
+                                <li class="headings">
+                                    <div class="time">Time</div>
+                                    <div class="speaker">Speaker</div>
+                                    <div class="subject">Subject</div>
+                                    <div class="venue">Venue</div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">9.00 AM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-one.jpg') }}" alt="speaker-thumb-one">
+                                            <span class="name">Samanta Doe</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Introduction to Wp</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium A</div>
+                                    </div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">10.00 AM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-two.jpg') }}" alt="speaker-thumb-two">
+                                            <span class="name">Zerad Pawel</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Principle of Wp</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium B</div>
+                                    </div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">12.00 AM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-three.jpg') }}" alt="speaker-thumb-three">
+                                            <span class="name">Henry Mong</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Wp Requirements</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium C</div>
+                                    </div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">2.00 PM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-four.jpg') }}" alt="speaker-thumb-four">
+                                            <span class="name">Baily Leo</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Introduction to Wp</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium D</div>
+                                    </div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">3.00 PM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-five.jpg') }}" alt="speaker-thumb-five">
+                                            <span class="name">Lee Mun</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Useful tips for Wp</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium E</div>
+                                    </div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">3.00 PM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-six.jpg') }}" alt="speaker-thumb-six">
+                                            <span class="name">Lee Mun</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Useful tips for Wp</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium E</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#" class="btn1 margin-top-30">learn more</a>
+                        </div>
+                        <div class="tab-pane fade schedule-item" id="nov21">
+                            <!-- Headings -->
+                            <ul class="m-0 p-0">
+                                <li class="headings">
+                                    <div class="time">Time</div>
+                                    <div class="speaker">Speaker</div>
+                                    <div class="subject">Subject</div>
+                                    <div class="venue">Venue</div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">9.00 AM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-one.jpg') }}" alt="speaker-thumb-one">
+                                            <span class="name">Samanta Doe</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Introduction to Wp</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium A</div>
+                                    </div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">10.00 AM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-two.jpg') }}" alt="speaker-thumb-two">
+                                            <span class="name">Zerad Pawel</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Principle of Wp</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium B</div>
+                                    </div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">12.00 AM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-three.jpg') }}" alt="speaker-thumb-three">
+                                            <span class="name">Henry Mong</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Wp Requirements</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium C</div>
+                                    </div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">2.00 PM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-four.jpg') }}" alt="speaker-thumb-four">
+                                            <span class="name">Baily Leo</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Introduction to Wp</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium D</div>
+                                    </div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">3.00 PM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-five.jpg') }}" alt="speaker-thumb-five">
+                                            <span class="name">Lee Mun</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Useful tips for Wp</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium E</div>
+                                    </div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">3.00 PM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-six.jpg') }}" alt="speaker-thumb-six">
+                                            <span class="name">Lee Mun</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Useful tips for Wp</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium E</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade schedule-item" id="nov22">
+                            <!-- Headings -->
+                            <ul class="m-0 p-0">
+                                <li class="headings">
+                                    <div class="time">Time</div>
+                                    <div class="speaker">Speaker</div>
+                                    <div class="subject">Subject</div>
+                                    <div class="venue">Venue</div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">9.00 AM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-one.jpg') }}" alt="speaker-thumb-one">
+                                            <span class="name">Samanta Doe</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Introduction to Wp</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium A</div>
+                                    </div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">10.00 AM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-two.jpg') }}" alt="speaker-thumb-two">
+                                            <span class="name">Zerad Pawel</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Principle of Wp</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium B</div>
+                                    </div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">12.00 AM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-three.jpg') }}" alt="speaker-thumb-three">
+                                            <span class="name">Henry Mong</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Wp Requirements</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium C</div>
+                                    </div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">2.00 PM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-four.jpg') }}" alt="speaker-thumb-four">
+                                            <span class="name">Baily Leo</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Introduction to Wp</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium D</div>
+                                    </div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">3.00 PM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-five.jpg') }}" alt="speaker-thumb-five">
+                                            <span class="name">Lee Mun</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Useful tips for Wp</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium E</div>
+                                    </div>
+                                </li>
+                                <!-- Schedule Details -->
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <!-- time -->
+                                        <div class="time">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span class="time">3.00 PM</span>
+                                        </div>
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <img src="{{ asset('images/speakers/speaker-thumb-six.jpg') }}" alt="speaker-thumb-six">
+                                            <span class="name">Lee Mun</span>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="subject">Useful tips for Wp</div>
+                                        <!-- Venue -->
+                                        <div class="venue">Auditorium E</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====  End of Schedule  ====-->
+
+    <!--==================================
+    =            Registration            =
+    ===================================-->
+
+    <section class="registration">
+        <div class="container-fuild p-0">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 p-0">
+                    <div class="service-block bg-service overlay-primary text-center">
+                        <div class="row no-gutters">
+                            <div class="col-6">
+                                <!-- Service item -->
+                                <div class="service-item">
+                                    <i class="fa fa-microphone"></i>
+                                    <h5>8 Speakers</h5>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <!-- Service item -->
+                                <div class="service-item">
+                                    <i class="fa fa-flag"></i>
+                                    <h5>500 + Seats</h5>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <!-- Service item -->
+                                <div class="service-item">
+                                    <i class="fa fa-ticket"></i>
+                                    <h5>300 tickets</h5>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <!-- Service item -->
+                                <div class="service-item">
+                                    <i class="fa fa-calendar"></i>
+                                    <h5>3 days event</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="fea-right">
-                        <div class="row">
-                            <div class="col-6 wow fadeInDown">
-                                <img src="assets/images/fea_img1.jpg" alt="">
+                <div class="col-lg-6 col-md-12 p-0">
+                    <div class="registration-block bg-registration overlay-dark">
+                        <div class="block">
+                            <div class="title text-left">
+                                <h3>Register to <span class="alternate">Eventfy</span></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                             </div>
-                            <div class="col-6 wow fadeInDown" data-wow-delay=".2s">
-                                <img src="assets/images/fea_img2.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 wow fadeInUp">
-                                <img src="assets/images/fea_img3.jpg" alt="">
-                            </div>
+                            <form action="#" class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control main" placeholder="Your Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control main" placeholder="Email">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control main" placeholder="Phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select class="form-control main" id="select-ticket">
+                                        <option>Ticket Type</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-white-md">Register Now</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- speaker area -->
-    <div class="speaker-area padding-top-110 padding-bottom-120">
-        <div class="spe-shapes">
-            <img src="assets/images/e_vec5.png" alt="" class="vec_1">
-            <img src="assets/images/vec_1.png" alt="" class="vec_2 item-rotate">
-            <img src="assets/images/e_vec9.png" alt="" class="vec_3 d-none d-md-block">
-        </div>
+    <!--====  End of Registration  ====-->
+
+
+    <!--===================================
+    =            Pricing Table            =
+    ====================================-->
+
+    <section class="section pricing">
         <div class="container">
-            <div class="row justify-content-center margin-bottom-20">
-                <div class="col-lg-6">
-                    <div class="common-title text-center">
-                        <h2>the creative speakers</h2>
-                        <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. </p>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3>Get <span class="alternate">ticket</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="container">
-                    <div class="row spe_wrapper">
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s">
-                            <div class="single-speaker first">
-                                <div class="img-box">
-                                    <img src="assets/images/spe_img6.png" alt="">
-                                </div>
-                                <div class="cont-box text-center">
-                                    <div>
-                                        <a href="#">
-                                            <h4>Jhon Michelle</h4>
-                                        </a>
-                                        <h5 class='margin-top-15'>web developer</h5>
-                                        <div class="social-icons text-center margin-top-15">
-                                            <a href="#"> <span class="si3"><i class="fab fa-pinterest-p"></i>
-                                                </span></a>
-                                            <a href="#"> <span class="si1"><i class="fab fa-facebook-f"></i> </span>
-                                            </a>
-                                            <a href="#"> <span class="si3"> <i
-                                                        class="fab fa-linkedin-in"></i></span></a>
-                                            <a href="#"> <span class="si2"> <i class="fab fa-twitter"></i></span> </a>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="col-lg-4 col-md-6">
+                    <!-- Pricing Item -->
+                    <div class="pricing-item">
+                        <div class="pricing-heading">
+                            <!-- Title -->
+                            <div class="title">
+                                <h6>Starter</h6>
+                            </div>
+                            <!-- Price -->
+                            <div class="price">
+                                <h2>39.00<span>$</span></h2>
+                                <p>/Person</p>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".4s">
-                            <div class="single-speaker">
-                                <div class="img-box">
-                                    <img src="assets/images/spe_img2.jpg" alt="">
-                                </div>
-                                <div class="cont-box text-center">
-                                    <div>
-                                        <a href="#">
-                                            <h4>Sarah Michelle</h4>
-                                        </a>
-                                        <h5 class='margin-top-15'>web developer</h5>
-                                        <div class="social-icons text-center text-md-right margin-top-15">
-                                            <a href="#"> <span class="si3"><i class="fab fa-pinterest-p"></i>
-                                                </span></a>
-                                            <a href="#"> <span class="si1"><i class="fab fa-facebook-f"></i> </span>
-                                            </a>
-                                            <a href="#"> <span class="si3"> <i
-                                                        class="fab fa-linkedin-in"></i></span></a>
-                                            <a href="#"> <span class="si2"> <i class="fab fa-twitter"></i></span> </a>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="pricing-body">
+                            <!-- Feature List -->
+                            <ul class="feature-list m-0 p-0">
+                                <li><p><span class="fa fa-check-circle available"></span>1 Comfortable Seats</p></li>
+                                <li><p><span class="fa fa-check-circle available"></span>Free Lunch and Coffee</p></li>
+                                <li><p><span class="fa fa-times-circle unavailable"></span>Certificate</p></li>
+                                <li><p><span class="fa fa-times-circle unavailable"></span>Easy Access</p></li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer text-center">
+                            <a href="#" class="btn btn-transparent-md">Buy a ticket</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <!-- Pricing Item -->
+                    <div class="pricing-item featured">
+                        <div class="pricing-heading">
+                            <!-- Title -->
+                            <div class="title">
+                                <h6>Standard</h6>
+                            </div>
+                            <!-- Price -->
+                            <div class="price">
+                                <h2>49.00<span>$</span></h2>
+                                <p>/Person</p>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-1 wow zoomIn" data-wow-delay=".6s">
-                            <div class="single-speaker">
-                                <div class="img-box">
-                                    <img src="assets/images/spe_img3.jpg" alt="">
-                                </div>
-                                <div class="cont-box text-center">
-                                    <div>
-                                        <a href="#">
-                                            <h4>Falchit Michelle</h4>
-                                        </a>
-                                        <h5 class='margin-top-15'>web developer</h5>
-                                        <div class="social-icons text-center text-md-right margin-top-15">
-                                            <a href="#"> <span class="si3"><i class="fab fa-pinterest-p"></i>
-                                                </span></a>
-                                            <a href="#"> <span class="si1"><i class="fab fa-facebook-f"></i> </span>
-                                            </a>
-                                            <a href="#"> <span class="si3"> <i
-                                                        class="fab fa-linkedin-in"></i></span></a>
-                                            <a href="#"> <span class="si2"> <i class="fab fa-twitter"></i></span> </a>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="pricing-body">
+                            <!-- Feature List -->
+                            <ul class="feature-list m-0 p-0">
+                                <li><p><span class="fa fa-check-circle available"></span>1 Comfortable Seats</p></li>
+                                <li><p><span class="fa fa-check-circle available"></span>Free Lunch and Coffee</p></li>
+                                <li><p><span class="fa fa-check-circle available"></span>Certificate</p></li>
+                                <li><p><span class="fa fa-times-circle unavailable"></span>Easy Access</p></li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer text-center">
+                            <a href="#" class="btn btn-main-md">Buy a ticket</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 m-auto">
+                    <!-- Pricing Item -->
+                    <div class="pricing-item">
+                        <div class="pricing-heading">
+                            <!-- Title -->
+                            <div class="title">
+                                <h6>Platinum</h6>
+                            </div>
+                            <!-- Price -->
+                            <div class="price">
+                                <h2>99.00<span>$</span></h2>
+                                <p>/Person</p>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".8s">
-                            <div class="single-speaker">
-                                <div class="img-box">
-                                    <img src="assets/images/spe_img4.jpg" alt="">
-                                </div>
-                                <div class="cont-box text-center">
-                                    <div>
-                                        <a href="#">
-                                            <h4>Leo Raffel</h4>
-                                        </a>
-                                        <h5 class='margin-top-15'>web developer</h5>
-                                        <div class="social-icons text-center text-md-right margin-top-15">
-                                            <a href="#"> <span class="si3"><i class="fab fa-pinterest-p"></i>
-                                                </span></a>
-                                            <a href="#"> <span class="si1"><i class="fab fa-facebook-f"></i> </span>
-                                            </a>
-                                            <a href="#"> <span class="si3"> <i
-                                                        class="fab fa-linkedin-in"></i></span></a>
-                                            <a href="#"> <span class="si2"> <i class="fab fa-twitter"></i></span> </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="pricing-body">
+                            <!-- Feature List -->
+                            <ul class="feature-list m-0 p-0">
+                                <li><p><span class="fa fa-check-circle available"></span>1 Comfortable Seats</p></li>
+                                <li><p><span class="fa fa-check-circle available"></span>Free Lunch and Coffee</p></li>
+                                <li><p><span class="fa fa-check-circle available"></span>Certificate</p></li>
+                                <li><p><span class="fa fa-check-circle available"></span>Easy Access</p></li>
+                            </ul>
                         </div>
-                        <a href="#" class="btn1 wow fadeInUp">see more</a>
+                        <div class="pricing-footer text-center">
+                            <a href="#" class="btn btn-transparent-md">Buy a ticket</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- ev_schedule -->
-    <div class="ev_schedule padding-top-110 padding-bottom-120">
-        <div class="ev-shapes">
-            <img src="assets/images/e_vec5.png" alt="" class="vec_1">
-        </div>
+    <!--====  End of Pricing Table  ====-->
+
+
+    <!--===========================================
+    =            Call to Action Ticket            =
+    ============================================-->
+
+    <section class="cta-ticket bg-ticket overlay-dark">
         <div class="container">
-            <div class="row justify-content-center margin-bottom-20 wow fadeInUp">
-                <div class="col-lg-6">
-                    <div class="common-title text-center">
-                        <h2>events schedule</h2>
-                        <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. </p>
+            <div class="row">
+                <div class="col-md-8">
+                    <!-- Get ticket info -->
+                    <div class="content-block">
+                        <h2>Get Ticket <span class="alternate">Now!</span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmtempor incidi</p>
+                        <a href="#" class="btn btn-main-md">Buy ticket</a>
                     </div>
                 </div>
             </div>
-            <!-- tab nav -->
-            <div class="row sc_tab_nav margin-bottom-30">
-                <div class="col-lg-9 offset-lg-2 wow fadeInUp" data-wow-delay=".2s">
-                    <div class="line">
-                        <img src="assets/images/line.png" alt="">
-                        <span class="one"></span>
-                        <span class="two"></span>
-                        <span class="three"></span>
-                        <span class="four"></span>
-                        <span class="five"></span>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <nav>
-                        <div class="nav sc_nav_wrapper justify-content-center " id="nav-tab" role="tablist">
-                            <a class="nav-item nav-link active wow zoomIn" data-wow-delay=".2s" id="nav-one-tab"
-                                data-toggle="tab" href="{{ asset('#nav-one') }}" role="tab" aria-controls="nav-one"
-                                aria-selected="true">
-                                <div class="single-nav">
-                                    <h4>Days 1</h4>
-                                    <p>May16- 2021</p>
-                                </div>
-                            </a>
-
-                            <a class="nav-item nav-link wow zoomIn" data-wow-delay=".4s" id="nav-two-tab"
-                                data-toggle="tab" href="{{ asset('#nav-two') }}" role="tab" aria-controls="nav-two"
-                                aria-selected="false">
-                                <div class="single-nav">
-                                    <h4>Days 2</h4>
-                                    <p>May16- 2021</p>
-                                </div>
-                            </a>
-
-                            <a class="nav-item nav-link wow zoomIn" data-wow-delay=".6s" id="nav-three-tab"
-                                data-toggle="tab" href="{{ asset('#nav-three') }}" role="tab" aria-controls="nav-three"
-                                aria-selected="false">
-                                <div class="single-nav">
-                                    <h4>Days 3</h4>
-                                    <p>May16- 2021</p>
-                                </div>
-                            </a>
-
-                            <a class="nav-item nav-link wow zoomIn" data-wow-delay=".8s" id="nav-four-tab"
-                                data-toggle="tab" href="{{ asset('#nav-four') }}" role="tab" aria-controls="nav-four"
-                                aria-selected="false">
-                                <div class="single-nav">
-                                    <h4>Days 4</h4>
-                                    <p>May16- 2021</p>
-                                </div>
-                            </a>
-
-                            <a class="nav-item nav-link wow zoomIn" data-wow-delay=".10s" id="nav-five-tab"
-                                data-toggle="tab" href="{{ asset('#nav-five') }}" role="tab" aria-controls="nav-five"
-                                aria-selected="false">
-                                <div class="single-nav">
-                                    <h4>Days 5</h4>
-                                    <p>May16- 2021</p>
-                                </div>
-                            </a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            <!-- tab tab -->
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img first">
-                                <img src="assets/images/sc_img1.png" alt="">
-                                <h5>John Smith</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-
-                                <h4 class="margin-top-20"> <a href="#">Introduction Creative
-                                        Design</a> </h4>
-
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img">
-                                <img src="assets/images/sc_img2.png" alt="">
-                                <h5>david warner</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-                                <h4 class="margin-top-20"><a href="#">
-                                        Getting Started With Creative Design
-                                    </a>
-                                </h4>
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img">
-                                <img src="assets/images/sc_img3.png" alt="">
-                                <h5>Denny morison</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-
-                                <h4 class="margin-top-20"><a href="#">Introduction Creative
-                                        Design</a>
-                                </h4>
-
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img">
-                                <img src="assets/images/sc_img4.png" alt="">
-                                <h5>Ketty perry</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-
-                                <h4 class="margin-top-20"> <a href="#">Prepare Your Design
-                                        Concept</a></h4>
-
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab">
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img">
-                                <img src="assets/images/sc_img2.png" alt="">
-                                <h5>david warner</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-                                <h4 class="margin-top-20"><a href="#">
-                                        Getting Started With Creative Design
-                                    </a>
-                                </h4>
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img first">
-                                <img src="assets/images/sc_img1.png" alt="">
-                                <h5>John Smith</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-
-                                <h4 class="margin-top-20"> <a href="#">Introduction Creative
-                                        Design</a> </h4>
-
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img">
-                                <img src="assets/images/sc_img3.png" alt="">
-                                <h5>Denny morison</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-
-                                <h4 class="margin-top-20"><a href="#">Introduction Creative
-                                        Design</a>
-                                </h4>
-
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img">
-                                <img src="assets/images/sc_img4.png" alt="">
-                                <h5>Ketty perry</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-
-                                <h4 class="margin-top-20"> <a href="#">Prepare Your Design
-                                        Concept</a></h4>
-
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="nav-three" role="tabpanel" aria-labelledby="nav-three-tab">
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img">
-                                <img src="assets/images/sc_img3.png" alt="">
-                                <h5>Denny morison</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-
-                                <h4 class="margin-top-20"><a href="#">Introduction Creative
-                                        Design</a>
-                                </h4>
-
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img">
-                                <img src="assets/images/sc_img2.png" alt="">
-                                <h5>david warner</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-                                <h4 class="margin-top-20"><a href="#">
-                                        Getting Started With Creative Design
-                                    </a>
-                                </h4>
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img first">
-                                <img src="assets/images/sc_img1.png" alt="">
-                                <h5>John Smith</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-
-                                <h4 class="margin-top-20"> <a href="#">Introduction Creative
-                                        Design</a> </h4>
-
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img">
-                                <img src="assets/images/sc_img4.png" alt="">
-                                <h5>Ketty perry</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-                                <h4 class="margin-top-20"> <a href="#">prepare your design
-                                        concept</a>
-                                </h4>
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="nav-four" role="tabpanel" aria-labelledby="nav-four-tab">
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img">
-                                <img src="assets/images/sc_img4.png" alt="">
-                                <h5>Ketty perry</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-
-                                <h4 class="margin-top-20"> <a href="#">Prepare Your Design
-                                        Concept</a></h4>
-
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img">
-                                <img src="assets/images/sc_img3.png" alt="">
-                                <h5>Denny morison</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-
-                                <h4 class="margin-top-20"><a href="#">Introduction Creative
-                                        Design</a>
-                                </h4>
-
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img">
-                                <img src="assets/images/sc_img2.png" alt="">
-                                <h5>david warner</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-                                <h4 class="margin-top-20"><a href="#">
-                                        Getting Started With Creative Design
-                                    </a>
-                                </h4>
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img first">
-                                <img src="assets/images/sc_img1.png" alt="">
-                                <h5>John Smith</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-
-                                <h4 class="margin-top-20"> <a href="#">Introduction Creative
-                                        Design</a> </h4>
-
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="nav-five" role="tabpanel" aria-labelledby="nav-five-tab">
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img">
-                                <img src="assets/images/sc_img2.png" alt="">
-                                <h5>david warner</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-                                <h4 class="margin-top-20"><a href="#">
-                                        Getting Started With Creative Design
-                                    </a>
-                                </h4>
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img first">
-                                <img src="assets/images/sc_img1.png" alt="">
-                                <h5>John Smith</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-
-                                <h4 class="margin-top-20"> <a href="#">Introduction Creative
-                                        Design</a> </h4>
-
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img">
-                                <img src="assets/images/sc_img4.png" alt="">
-                                <h5>Ketty perry</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-
-                                <h4 class="margin-top-20"> <a href="#">Prepare Your Design
-                                        Concept</a></h4>
-
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single item -->
-                    <div class="row sc_tab_cont no-gutters align-items-center">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <div class="sp_img">
-                                <img src="assets/images/sc_img3.png" alt="">
-                                <h5>Denny morison</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                            <div class="sp_cont">
-                                <div class="meta-box">
-                                    <span><i class="icofont-ui-calendar"></i> May-15-2021</span>
-                                    <span><i class="icofont-clock-time"></i> 9.00 AM-11.45PM</span>
-                                    <a href="#"><span> <i class="icofont-ui-note"></i> buy ticket</span></a>
-                                </div>
-
-                                <h4 class="margin-top-20"><a href="#">Introduction Creative
-                                        Design</a>
-                                </h4>
-
-                                <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
+        <div class="image-block"><img src="{{ asset('images/speakers/speaker-ticket.png') }}" alt="" class="img-fluid"></div>
+    </section>
 
-    <!-- ticket area -->
-    <div class="ticket-area padding-top-110 padding-bottom-90">
-        <div class="tic_shapes">
-            <img src="assets/images/e_vec2.png" alt="" class="vec_1">
-            <img src="assets/images/e_vec5.png" alt="" class="vec_2">
-            <img src="assets/images/vec_5.png" alt="" class="vec_3 item-zooming">
-        </div>
+    <!--====  End of Call to Action Ticket  ====-->
+
+    <!--==============================
+    =            Sponsors            =
+    ===============================-->
+
+    <section class="sponsors section bg-sponsors overlay-white">
         <div class="container">
-            <div class="row justify-content-center margin-bottom-20">
-                <div class="col-lg-6 wow fadeInUp">
-                    <div class="common-title text-center">
-                        <h2>get your ticket</h2>
-                        <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. </p>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3>Our <span class="alternate">Sponsors</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore dolore</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-delay=".2s">
-                    <div class="single-ticket">
-                        <h4>Day Pass</h4>
-                        <h2 class="margin-top-20">80$/<span>1 person</span></h2>
-                        <div class="sep">
-                            <hr>
-                        </div>
-                        <ul>
-                            <li>Conference Tickets</li>
-                            <li>free lunch nad coffee</li>
-                            <li>certificates</li>
-                            <li>private access</li>
-                            <li>printed materials</li>
-                            <li>experts contacts</li>
+                <div class="col-12">
+                    <!-- Title -->
+                    <div class="sponsor-title text-center">
+                        <h5>Platinum Sponsors</h5>
+                    </div>
+                    <div class="block text-center">
+                        <!-- Sponsors image list -->
+                        <ul class="list-inline sponsors-list">
+                            <li class="list-inline-item">
+                                <div class="image-block text-center">
+                                    <a href="#">
+                                        <img src="{{ asset('images/sponsors/pt-spon-two.png') }}" alt="sponsors-logo" class="img-fluid">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="image-block text-center">
+                                    <a href="#">
+                                        <img src="{{ asset('images/sponsors/pt-spon-two.png') }}" alt="sponsors-logo" class="img-fluid">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="image-block text-center">
+                                    <a href="#">
+                                        <img src="{{ asset('images/sponsors/pt-spon-three.png') }}" alt="sponsors-logo" class="img-fluid">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="image-block text-center">
+                                    <a href="#">
+                                        <img src="{{ asset('images/sponsors/pt-spon-four.png') }}" alt="sponsors-logo" class="img-fluid">
+                                    </a>
+                                </div>
+                            </li>
                         </ul>
-                        <a href="#" class="btn2">buy ticket</a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInDown" data-wow-delay=".4s">
-                    <div class="single-ticket active">
-                        <h4>Day Pass</h4>
-                        <h2 class="margin-top-20">80$/<span>1 person</span></h2>
-                        <div class="sep">
-                            <hr>
-                        </div>
-                        <ul>
-                            <li>Conference Tickets</li>
-                            <li>free lunch nad coffee</li>
-                            <li>certificates</li>
-                            <li>private access</li>
-                            <li>printed materials</li>
-                            <li>experts contacts</li>
+                    <!-- Title -->
+                    <div class="sponsor-title text-center">
+                        <h5>Gold Sponsors</h5>
+                    </div>
+                    <div class="block text-center">
+                        <!-- Sponsors image list -->
+                        <ul class="list-inline sponsors-list">
+                            <li class="list-inline-item">
+                                <div class="image-block text-center">
+                                    <a href="#">
+                                        <img src="{{ asset('images/sponsors/gl-spon-one.png') }}" alt="sponsors-logo" class="img-fluid">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="image-block text-center">
+                                    <a href="#">
+                                        <img src="{{ asset('images/sponsors/gl-spon-two.png') }}" alt="sponsors-logo" class="img-fluid">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="image-block text-center">
+                                    <a href="#">
+                                        <img src="{{ asset('images/sponsors/gl-spon-three.png') }}" alt="sponsors-logo" class="img-fluid">
+                                    </a>
+                                </div>
+                            </li>
                         </ul>
-                        <a href="#" class="btn2">buy ticket</a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="single-ticket">
-                        <h4>Day Pass</h4>
-                        <h2 class="margin-top-20">80$/<span>1 person</span></h2>
-                        <div class="sep">
-                            <hr>
-                        </div>
-                        <ul>
-                            <li>Conference Tickets</li>
-                            <li>free lunch nad coffee</li>
-                            <li>certificates</li>
-                            <li>private access</li>
-                            <li>printed materials</li>
-                            <li>experts contacts</li>
-                        </ul>
-                        <a href="#" class="btn2">buy ticket</a>
+                    <div class="sponsor-btn text-center">
+                        <a href="#" class="btn btn-main-md">Become a sponsor</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- testi area -->
-    <div class="testi-area padding-top-120 padding-bottom-120">
-        <div class="test-shapes">
-            <img src="assets/images/e_vec2.png" alt="" class="vec1">
-            <img src="assets/images/e_vec8.png" alt="" class="vec2 item-animateTwo">
-            <img src="assets/images/vec_5.png" alt="" class="vec3 item-zooming">
-            <img src="assets/images/tvec.png" alt="" class="vec4">
-        </div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 col-xl-6">
-                    <div class="testi-left">
-                        <div class="common-title">
-                            <h2>what people say about my service</h2>
-                            <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod
-                                tempor incididunt
-                                ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-xl-6">
-                    <div class="testi-right">
-                        <div class="testi-slider-active">
-                            <div class="col-lg-6">
-                                <div class="single-testi">
-                                    <div class="img-box">
-                                        <img src="assets/images/t_img1.png" alt="">
-                                        <img class="quote" src="assets/images/quote.png" alt="">
-                                    </div>
-                                    <div class="cont-box">
-                                        <h5>Michael Dennis</h5>
-                                        <h6 class="margin-top-10">founder & CEO</h6>
-                                        <p class="margin-top-10">Lorem ipsum dolor sadipiscing elit, sed do eiusmod
-                                            tempor inclabore et dolore
-                                            magna aliqua. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="single-testi">
-                                    <div class="img-box">
-                                        <img src="assets/images/t_img2.png" alt="">
-                                        <img class="quote" src="assets/images/quote.png" alt="">
-                                    </div>
-                                    <div class="cont-box">
-                                        <h5>katty wilson</h5>
-                                        <h6 class="margin-top-10">founder & CEO</h6>
-                                        <p class="margin-top-10">Lorem ipsum dolor sadipiscing elit, sed do eiusmod
-                                            tempor inclabore et dolore
-                                            magna aliqua. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="single-testi">
-                                    <div class="img-box">
-                                        <img src="assets/images/t_img1.png" alt="">
-                                        <img class="quote" src="assets/images/quote.png" alt="">
-                                    </div>
-                                    <div class="cont-box">
-                                        <h5>Michael Dennis</h5>
-                                        <h6 class="margin-top-10">founder & CEO</h6>
-                                        <p class="margin-top-10">Lorem ipsum dolor sadipiscing elit, sed do eiusmod
-                                            tempor inclabore et dolore
-                                            magna aliqua. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="single-testi">
-                                    <div class="img-box">
-                                        <img src="assets/images/t_img2.png" alt="">
-                                        <img class="quote" src="assets/images/quote.png" alt="">
-                                    </div>
-                                    <div class="cont-box">
-                                        <h5>katty wilson</h5>
-                                        <h6 class="margin-top-10">founder & CEO</h6>
-                                        <p class="margin-top-10">Lorem ipsum dolor sadipiscing elit, sed do eiusmod
-                                            tempor inclabore et dolore
-                                            magna aliqua. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--====  End of Sponsors  ====-->
 
-    <!-- blog-area -->
-    <div class="blog-area padding-top-110 padding-bottom-120">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 wow fadeInup">
-                    <div class="common-title text-center">
-                        <h2>recent post & news</h2>
-                        <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-slider-active">
-                <div class="col-lg-4">
-                    <div class="single-blog">
-                        <div class="img-box">
-                            <img src="assets/images/b_1.jpg" alt="">
-                        </div>
-                        <div class="content-box margin-top-10">
-                            <div class="meta-box d-flex justify-content-between">
-                                <a href="#"><span><i class="icofont-tag"></i></span> design</a>
-                                <a href="#"><span><i class="icofont-ui-calendar"></i></span> 01/03/21</a>
-                            </div>
+    <!--================================
+    =            News Posts            =
+    =================================-->
 
-                            <h4 class="margin-top-20"><a href='blog-single.html'> you can Buy attention advertising </a>
-                            </h4>
-
-                            <p class="margin-top-20">Lorem ipsum dolor sit amet, con adipiscing elit, sed do eiusmod.
-                            </p>
-                            <a class="link margin-top-20" href="#">read more <span><i
-                                        class="icofont-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-blog">
-                        <div class="img-box">
-                            <img src="assets/images/b_2.jpg" alt="">
-                        </div>
-                        <div class="content-box margin-top-10">
-                            <div class="meta-box d-flex justify-content-between">
-                                <a href="#"><span><i class="icofont-tag"></i></span> marketing</a>
-                                <a href="#"><span><i class="icofont-ui-calendar"></i></span> 01/03/21</a>
-                            </div>
-
-                            <h4 class="margin-top-20"><a href="#">Blogging is Good for Your Career</a>
-                            </h4>
-
-                            <p class="margin-top-20">Lorem ipsum dolor sit amet, con adipiscing elit, sed do eiusmod.
-                            </p>
-                            <a class="link margin-top-20" href="#">read more <span><i
-                                        class="icofont-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-blog">
-                        <div class="img-box">
-                            <img src="assets/images/b_3.jpg" alt="">
-                        </div>
-                        <div class="content-box margin-top-10">
-                            <div class="meta-box d-flex justify-content-between">
-                                <a href="#"><span><i class="icofont-tag"></i></span> design</a>
-                                <a href="#"><span><i class="icofont-ui-calendar"></i></span> 01/03/21</a>
-                            </div>
-
-                            <h4 class="margin-top-20"><a href='blog-single.html'> you can Buy attention advertising </a>
-                            </h4>
-
-                            <p class="margin-top-20">Lorem ipsum dolor sit amet, con adipiscing elit, sed do eiusmod.
-                            </p>
-                            <a class="link margin-bottom-20" href="#">read more <span><i
-                                        class="icofont-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-blog">
-                        <div class="img-box">
-                            <img src="assets/images/b_1.jpg" alt="">
-                        </div>
-                        <div class="content-box margin-top-10">
-                            <div class="meta-box d-flex justify-content-between">
-                                <a href="#"><span><i class="icofont-tag"></i></span> design</a>
-                                <a href="#"><span><i class="icofont-ui-calendar"></i></span> 01/03/21</a>
-                            </div>
-
-                            <h4 class="margin-top-20"><a href='blog-single.html'> you can Buy attention advertising </a>
-                            </h4>
-
-                            <p class="margin-top-20">Lorem ipsum dolor sit amet, con adipiscing elit, sed do eiusmod.
-                            </p>
-                            <a class="link margin-top-20" href="#">read more <span><i
-                                        class="icofont-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-blog">
-                        <div class="img-box">
-                            <img src="assets/images/b_2.jpg" alt="">
-                        </div>
-                        <div class="content-box margin-top-10">
-                            <div class="meta-box d-flex justify-content-between">
-                                <a href="#"><span><i class="icofont-tag"></i></span> marketing</a>
-                                <a href="#"><span><i class="icofont-ui-calendar"></i></span> 01/03/21</a>
-                            </div>
-
-                            <h4 class="margin-top-20"><a href="#">Blogging is Good for Your Career</a>
-                            </h4>
-
-                            <p class="margin-top-20">Lorem ipsum dolor sit amet, con adipiscing elit, sed do eiusmod.
-                            </p>
-                            <a class="link margin-bottom-20" href="#">read more <span><i
-                                        class="icofont-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-blog">
-                        <div class="img-box">
-                            <img src="assets/images/b_3.jpg" alt="">
-                        </div>
-                        <div class="content-box margin-top-10">
-                            <div class="meta-box d-flex justify-content-between">
-                                <a href="#"><span><i class="icofont-tag"></i></span> design</a>
-                                <a href="#"><span><i class="icofont-ui-calendar"></i></span> 01/03/21</a>
-                            </div>
-
-                            <h4 class="margin-top-20"><a href='blog-single.html'> you can Buy attention advertising </a>
-                            </h4>
-
-                            <p class="margin-top-20">Lorem ipsum dolor sit amet, con adipiscing elit, sed do eiusmod.
-                            </p>
-                            <a class="link margin-bottom-20" href="#">read more <span><i
-                                        class="icofont-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- subs area -->
-    <div class="subs-area padding-top-120 padding-bottom-120">
+    <section class="news section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="row align-items-center">
-                        <div class="col-lg-7 col-xl-6 col-12 wow fadeInLeft">
-                            <div class="subs-content">
-                                <h2>subscribe our newsletter</h2>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-xl-6 col-12 wow fadeInRight">
-                            <div class="subs-form">
-                                <form action="#">
-                                    <input type="email" placeholder="Enter your email address">
-                                    <button type="submit">subscribe</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- brand area -->
-    <div class="brand-area padding-top-110 padding-bottom-90">
-        <div class="container">
-            <div class="row justify-content-center margin-bottom-20">
-                <div class="col-lg-6 wow fadeInUp">
-                    <div class="common-title text-center">
-                        <h2>our great sponsor</h2>
-                        <p class="margin-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. </p>
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3>Eventfy <span class="alternate">News</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore dolore</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s">
-                    <div class="single-brand">
-                        <img src="assets/images/brand1.png" alt="">
+                <div class="col-lg-4 col-md-6 col-sm-8 col-10 m-auto">
+                    <div class="blog-post">
+                        <div class="post-thumb">
+                            <a href="news-single.html">
+                                <img src="{{ asset('images/news/post-thumb-one.jpg') }}" alt="post-image" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="post-content">
+                            <div class="date">
+                                <h4>20<span>May</span></h4>
+                            </div>
+                            <div class="post-title">
+                                <h2><a href="news-single.html">Elementum purus id ultrices.</a></h2>
+                            </div>
+                            <div class="post-meta">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <i class="fa fa-user-o"></i>
+                                        <a href="#">Admin</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <i class="fa fa-heart-o"></i>
+                                        <a href="#">350</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <i class="fa fa-comments-o"></i>
+                                        <a href="#">30</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".4s">
-                    <div class="single-brand">
-                        <img src="assets/images/brand2.png" alt="">
+                <div class="col-lg-4 col-md-6 col-sm-8 col-10 m-auto">
+                    <div class="blog-post">
+                        <div class="post-thumb">
+                            <a href="news-single.html">
+                                <img src="{{ asset('images/news/post-thumb-two.jpg') }}" alt="post-image" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="post-content">
+                            <div class="date">
+                                <h4>20<span>May</span></h4>
+                            </div>
+                            <div class="post-title">
+                                <h2><a href="news-single.html">Elementum purus id ultrices.</a></h2>
+                            </div>
+                            <div class="post-meta">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <i class="fa fa-user-o"></i>
+                                        <a href="#">Admin</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <i class="fa fa-heart-o"></i>
+                                        <a href="#">350</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <i class="fa fa-comments-o"></i>
+                                        <a href="#">30</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".6s">
-                    <div class="single-brand">
-                        <img src="assets/images/brand3.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".8s">
-                    <div class="single-brand">
-                        <img src="assets/images/brand4.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- register area -->
-    <div class="regis-area padding-top-120 padding-bottom-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 wow fadeInLeft">
-                    <div class="reg-left">
-                        <img src="assets/images/form_img1.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInRight">
-                    <div class="reg-right">
-                        <div class="common-title">
-                            <h2>register now</h2>
-                            <div class="form-wrapper margin-top-30">
-                                <form action="#">
-                                    <div class="input-wrapper">
-                                        <span class="icon"><i class="icofont-ui-user"></i></span>
-                                        <input type="text" placeholder="Full Name">
-                                    </div>
-                                    <div class="input-wrapper">
-                                        <span class="icon"><i class="icofont-email"></i></span>
-                                        <input type="text" placeholder="Email Adress">
-                                    </div>
-                                    <div class="input-wrapper">
-                                        <span class="icon"><i class="icofont-phone"></i></span>
-                                        <input type="text" placeholder="Phone">
-                                    </div>
-                                    <div class="input-wrapper special">
-                                        <span class="icon"><i class="icofont-ui-messaging"></i></span>
-                                        <textarea placeholder="Additional massage"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn1">submit now</button>
-                                </form>
+                <div class="col-lg-4 col-md-6 m-md-auto col-sm-8 col-10 m-auto">
+                    <div class="blog-post">
+                        <div class="post-thumb">
+                            <a href="news-single.html">
+                                <img src="{{ asset('images/news/post-thumb-three.jpg') }}" alt="post-image" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="post-content">
+                            <div class="date">
+                                <h4>20<span>May</span></h4>
+                            </div>
+                            <div class="post-title">
+                                <h2><a href="news-single.html">Elementum purus id ultrices.</a></h2>
+                            </div>
+                            <div class="post-meta">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <i class="fa fa-user-o"></i>
+                                        <a href="#">Admin</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <i class="fa fa-heart-o"></i>
+                                        <a href="#">350</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <i class="fa fa-comments-o"></i>
+                                        <a href="#">30</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!--====  End of News Posts  ====-->
+
+    <!--==============================================
+    =            Call to Action Subscribe            =
+    ===============================================-->
+
+    <section class="cta-subscribe bg-subscribe overlay-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mr-auto">
+                    <!-- Subscribe Content -->
+                    <div class="content">
+                        <h3>Subscribe to Our <span class="alternate">Newsletter</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor</p>
+                    </div>
+                </div>
+                <div class="col-md-6 ml-auto align-self-center">
+                    <!-- Subscription form -->
+                    <form action="#" class="row">
+                        <div class="col-lg-8 col-md-12">
+                            <input type="email" class="form-control main white mb-lg-0" placeholder="Email">
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="subscribe-button">
+                                <button class="btn btn-main-md">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====  End of Call to Action Subscribe  ====-->
+
+    <!--================================
+    =            Google Map            =
+    =================================-->
+
+    <section class="map">
+        <!-- Google Map  -->
+        <div class="map" id="map_canvas" data-latitude="21.170240" data-longitude="72.831062" data-marker="images/marker.png"></div>
+        <div class="address-block">
+            <h4>Docklands Convention</h4>
+            <ul class="address-list p-0 m-0">
+                <li><i class="fa fa-home"></i><span>Street Address, Location, <br>City, Country.</span></li>
+                <li><i class="fa fa-phone"></i><span>[00] 000 000 000</span></li>
+            </ul>
+            <a href="#" class="btn btn-white-md">Get Direction</a>
+        </div>
+    </section>
+
+    <!--====  End of Google Map  ====-->
 </x-web-layout>
