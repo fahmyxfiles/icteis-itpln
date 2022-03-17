@@ -6,7 +6,7 @@
     <div class="container-fluid p-0">
         <!-- logo -->
         <a class="navbar-brand" href="index.html">
-          <img src="{{ asset('images/logo.png') }}" alt="logo">
+          <img src="{{ asset('images/logo.svg') }}" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="fa fa-bars"></span>
@@ -24,49 +24,39 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="speakers.html">Speakers
+            <a class="nav-link" href="speakers.html">Call For Paper
               <span>/</span>
             </a>
           </li>
           <li class="nav-item dropdown dropdown-slide">
-            <a class="nav-link" href="#" data-toggle="dropdown">Pages<span>/</span></a>
+            <a class="nav-link" href="#" data-toggle="dropdown">Guideline<span>/</span></a>
               <!-- Dropdown list -->
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="aboutus.html">About Us</a>
-                <a class="dropdown-item" href="single-speaker.html">Single Speaker</a>
-                <a class="dropdown-item" href="gallery.html">Gallery</a>
-                <a class="dropdown-item" href="gallery-2.html">Gallery-02</a>
-                <a class="dropdown-item" href="testimonial.html">Testimonial</a>
-                <a class="dropdown-item" href="pricing.html">Pricing</a>
-                <a class="dropdown-item" href="faq.html">FAQ</a>
-                <a class="dropdown-item" href="404.html">404</a>
+                <a class="dropdown-item" href="aboutus.html">Abstract Guideline</a>
+                <a class="dropdown-item" href="single-speaker.html">Full Paper Guideline</a>
+                <a class="dropdown-item" href="gallery.html">Presentation Guideline</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown dropdown-slide">
+            <a class="nav-link" href="#" data-toggle="dropdown">Downloads<span>/</span></a>
+              <!-- Dropdown list -->
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="aboutus.html">All Docs</a>
+                <a class="dropdown-item" href="single-speaker.html">All Guideline</a>
+                <a class="dropdown-item" href="gallery.html">Article Preparation</a>
+                <a class="dropdown-item" href="gallery-2.html">Paper Template</a>
+                <a class="dropdown-item" href="testimonial.html">Copyright Checklist</a>
               </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="schedule.html">Schedule<span>/</span></a>
+            <a class="nav-link" href="schedule.html">Fees<span>/</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sponsors.html">Sponsors<span>/</span></a>
-          </li>
-          <li class="nav-item dropdown dropdown-slide">
-            <a class="nav-link" href="#"  data-toggle="dropdown">News
-              <span>/</span>
-            </a>
-            <!-- Dropdown list -->
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="news.html">News without sidebar</a>
-              <a class="dropdown-item" href="news-right-sidebar.html">News with right sidebar</a>
-              <a class="dropdown-item" href="news-left-sidebar.html">News with left sidebar</a>
-              <a class="dropdown-item" href="news-single.html">News Single</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="sponsors.html">Publication<span>/</span></a>
           </li>
         </ul>
         <a href="#" class="ticket">
-          <img src="{{ asset('images/icon/ticket.png') }}" alt="ticket">
-          <span>Buy Ticket</span>
+          <span>Submit</span>
         </a>
         </div>
     </div>

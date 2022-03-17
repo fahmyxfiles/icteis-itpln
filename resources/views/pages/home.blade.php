@@ -8,14 +8,21 @@
             <div class="row">
                 <div class="col-lg-12">
                     <!-- Content Block -->
-                    <div class="block">
+                    <div class="block text-center">
                         <!-- Coundown Timer -->
-                        <div class="timer"></div>
-                        <h1>Business</h1>
-                        <h2>Conference 2020</h2>
-                        <h6>02-05 July 2020 California</h6>
+                        <p style="color:white;">The 1st</p>
+                        <h3>International Conference</h3>
+                        <h4>of Technology, Energy, and Information System</h4>
+                        <h6>03 September 2022, West Jakarta</h6>
                         <!-- Action Button -->
-                        <a href="#" class="btn btn-white-md">get ticket now</a>
+                        <a href="#" class="btn btn-blue-md">submit paper
+                            <div class="btn-content-child"><img src="{{ asset('images/line.svg') }}" alt="line"><img src="{{ asset('images/plus.svg') }}" alt="plus">
+                        </div></a>
+                        <br>
+                        <!-- Action Button -->
+                        <a href="#" class="btn btn-white-md">call for paper
+                            <div class="btn-content-child"><img src="{{ asset('images/line.svg') }}" alt="line"><img src="{{ asset('images/arrow.svg') }}" alt="arrow">
+                        </div></a>
                     </div>
                 </div>
             </div>

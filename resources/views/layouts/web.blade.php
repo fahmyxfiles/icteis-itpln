@@ -80,7 +80,7 @@
     <div class="row">
       <div class="col-md-6 align-self-center">
         <div class="copyright-text">
-          <p><a href="#">Eventfy</a> &#169; 2020 All Right Reserved</p>
+          <p><a href="#">Icteis ITPLN</a> &#169; 2022 All Right Reserved</p>
         </div>
       </div>
       <div class="col-md-6">

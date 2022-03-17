@@ -218,7 +218,7 @@ button:hover {
 }
 
 .bg-banner-one {
-  background: url(../images/background/homepage-one-banner.jpg) no-repeat;
+  background: url(/images/hero-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -548,15 +548,60 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .btn-white-md {
-  background: #fff;
-  color: #222222;
-  padding: 15px 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  background: hsla(0,0%,100%,.1);
+  color: #ffffff;
+  padding: 15px 20px;
   border-radius: 0;
+  max-width: 225px;
+  text-align:left;
+  margin:auto;
 }
 
 .btn-white-md:hover {
+  background: hsla(0,0%,100%,.1);
+  color: #ffffff;
+}
+.btn-white-md:visited {
+  background: hsla(0,0%,100%,.1);
+  color: #ffffff;
+}
+
+.btn-blue-md {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
   background: #005aff;
   color: #fff;
+  padding: 15px 20px;
+  border-radius: 0;
+  max-width: 225px;
+  text-align:left;
+  margin:auto;
+}
+
+.btn-blue-md:hover {
+  background: #005aff;
+  color: #fff;
+}
+
+.btn-blue-md:visited {
+  background: #005aff;
+  color: #fff;
+}
+
+.btn-content-child {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
 }
 
 .btn-rounded-icon {
@@ -1022,9 +1067,9 @@ select.form-control:not([size]):not([multiple]) {
   font-family: "Montserrat", sans-serif;
 }
 
-.banner .block h1 {
+.banner .block h3 {
   text-transform: uppercase;
-  font-size: 5.5rem;
+  font-size: 3rem;
   color: #005aff;
   font-weight: 700;
   margin-bottom: 5px;
@@ -1032,20 +1077,20 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 @media (max-width: 767px) {
-  .banner .block h1 {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .banner .block h1 {
+  .banner .block h3 {
     font-size: 3rem;
   }
 }
 
-.banner .block h2 {
+@media (max-width: 400px) {
+  .banner .block h3 {
+    font-size: 3rem;
+  }
+}
+
+.banner .block h4 {
   text-transform: uppercase;
-  font-size: 4.625rem;
+  font-size: 2rem;
   color: #fff;
   font-weight: 600;
   text-shadow: 3.5px 6.062px 0px rgba(0, 0, 0, 0.1);
@@ -1053,14 +1098,14 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 @media (max-width: 767px) {
-  .banner .block h2 {
-    font-size: 3.2rem;
+  .banner .block h4 {
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 400px) {
-  .banner .block h2 {
-    font-size: 2.3rem;
+  .banner .block h4 {
+    font-size: 2rem;
   }
 }
 
