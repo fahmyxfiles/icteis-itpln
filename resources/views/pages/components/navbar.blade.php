@@ -13,15 +13,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item dropdown active dropdown-slide">
+          <li class="nav-item active">
             <a class="nav-link" href="#"  data-toggle="dropdown">Home
               <span>/</span>
             </a>
-            <!-- Dropdown list -->
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="index.html">Homepage</a>
-              <a class="dropdown-item" href="index-2.html">Homepage 2</a>
-            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="speakers.html">Call For Paper
