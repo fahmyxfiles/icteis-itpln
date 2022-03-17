@@ -53,33 +53,60 @@
     <section class="section about">
         <div class="container">
             <div class="row">
+                <div class="col-lg-8 col-md-6 align-self-center">
+                    <div class="content-block">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h2>Overview</h2>
+                                <div class="description-one">
+                                    <p>
+                                        About ICTEIS 2022
+                                    </p>
+                                </div>
+                                <div class="description-two">
+                                    <p>Held as part of the Universitas Gadjah Mada Annual Scientific Conferences (UASC 2021) series, the 7th International Conference on Science and Technology (ICST 2021) provides an ideal academic platform for researchers to present the latest research findings and describe emerging technologies and directions in engineering and the natural sciences.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="description-one">
+                                    <p>
+                                        Notes from Organizer
+                                    </p>
+                                </div>
+                                <div class="description-two">
+                                    <p>Following the advice and guidelines from healthcare officials and local authorities, ICST 2021 will now be held virtually on 7–8 September 2021. The conference fees will be adjusted. Information and instructions on how to prepare for a virtual presentation will be sent separately.</p>
+                                </div>
+                                <div class="description-one mt-2">
+                                    <p>
+                                        Quick Actions
+                                    </p>
+                                </div>
+                                <div class="quickActions">
+                                    <nav>
+                                        <ul style="padding-inline-start: 0px;">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="{{ asset('images/callforpaper.svg') }}" alt="icon"> Call For Paper
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="{{ asset('images/downloaddocs.svg') }}" alt="icon">Download All Docs
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="{{ asset('images/mail.svg') }}" alt="icon">Email Organizer
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-4 col-md-6 align-self-center">
                     <div class="image-block bg-about">
                         <img class="img-fluid" src="{{ asset('images/speakers/featured-speaker.jpg') }}" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-6 align-self-center">
-                    <div class="content-block">
-                        <h2>Overview</h2>
-                        <div class="description-one">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt
-                                ut labore dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco.
-                            </p>
-                        </div>
-                        <div class="description-two">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
-                                ut labore et dolore magna aliq enim ad minim veniam quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea.</p>
-                        </div>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a href="#" class="btn btn-main-md">Buy ticket</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="btn btn-transparent-md">Read more</a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>

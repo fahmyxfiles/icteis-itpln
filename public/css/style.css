@@ -1109,6 +1109,30 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 
+.quickActions {
+  margin-top: 10px;
+}
+
+.quickActions nav ul {
+  list-style: none;
+  margin-top: 16px;
+}
+
+.quickActions nav ul li {
+  margin-top: 12px;
+}
+
+.quickActions a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(30, 32, 41, 0.8);
+}
+
 .banner .block h6 {
   color: #fff;
   font-weight: 400;
