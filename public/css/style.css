@@ -1078,13 +1078,13 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 767px) {
   .banner .block h3 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 400px) {
   .banner .block h3 {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 }
 
@@ -1099,13 +1099,13 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 767px) {
   .banner .block h4 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 400px) {
   .banner .block h4 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 
