@@ -511,29 +511,6 @@
 
     <!--====  End of Schedule  ====-->
 
-    <!--===========================================
-    =            Call to Action Ticket            =
-    ============================================-->
-
-    <section class="cta-ticket bg-ticket overlay-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <!-- Get ticket info -->
-                    <div class="content-block">
-                        <h2>Submit Papers <span class="alternate">Now!</span></h2>
-                        <p>Submit your papers and join us in the competition</p>
-                        <a href="#" class="btn btn-main-md">Submit</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="image-block"><img src="{{ asset('images/speakers/speaker-ticket.png') }}" alt=""
-                class="img-fluid"></div>
-    </section>
-
-    <!--====  End of Call to Action Ticket  ====-->
-
     <!--==============================
     =            Sponsors            =
     ===============================-->
