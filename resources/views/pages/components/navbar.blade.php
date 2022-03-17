@@ -2,7 +2,7 @@
 =            Navigation Section            =
 =========================================-->
 
-<nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
+<nav class="navbar main-nav border-less navbar-expand-lg p-0">
     <div class="container-fluid p-0">
         <!-- logo -->
         <a class="navbar-brand" href="index.html">
