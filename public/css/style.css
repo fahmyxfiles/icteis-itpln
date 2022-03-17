@@ -1215,7 +1215,7 @@ select.form-control:not([size]):not([multiple]) {
   }
 
   .active-jumper {
-    color: #1455fe;
+    color: #1455fe !important;
     border-bottom: #1455fe 1px solid;
   }
 }
