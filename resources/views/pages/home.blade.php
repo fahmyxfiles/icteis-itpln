@@ -606,7 +606,7 @@
 
     <section class="map">
         <!-- Google Map  -->
-        <div class="map" id="map_canvas" data-latitude="21.170240" data-longitude="72.831062"
+        <div class="map" id="map_canvas" data-latitude="-6.168101761386977" data-longitude="106.72652079960594"
             data-marker="images/marker.png"></div>
         <div class="address-block">
             <h4>Institut Teknologi PLN Jakarta</h4>
