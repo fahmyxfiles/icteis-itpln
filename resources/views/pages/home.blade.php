@@ -1,4 +1,45 @@
 <x-web-layout>
+    <x-slot name="styles">
+        <style>
+        .other-reviewer-h4 {
+            color: #1e2029;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 8px;
+            font-style: normal;
+            font-weight: 400;
+        }
+        .other-reviewer-col {
+            color: rgba(30,32,41,.8);
+            font-size: 16px;
+            line-height: 28px;
+            margin: 16px 0 0;
+        }
+        .committees-h1 {
+            padding-bottom: 24px;
+            padding-top: 40px;
+            color: #1e2029;
+            font-size: 40px;
+            line-height: 52px;
+        }
+        .committees-division {
+            color: #1e2029;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 8px;
+            font-style: normal;
+            font-weight: 400;
+        }
+        .committees-member {
+            color: rgba(30,32,41,.8);
+            font-size: 16px;
+            line-height: 28px;
+            margin: 16px 0 0;
+            font-style: normal;
+            font-weight: 400;
+        }
+        </style>
+    </x-slot>
     <!--============================
     =            Banner            =
     =============================-->
@@ -505,6 +546,45 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <hr />
+            <h4 class="other-reviewer-h4">Other Reviewers</h4>
+            <div class="row d-flex">
+                <div class="col-lg-3 col-md-4 col-sm-6 other-reviewer-col">Liyah Appleton</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 other-reviewer-col">Seb Armstrong</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 other-reviewer-col">Abdurrahman Fritz</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 other-reviewer-col">Dorian Juarez</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 other-reviewer-col">Sumaiya Hunt</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 other-reviewer-col">Maksymilian Bonner</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 other-reviewer-col">Mitchel Battle</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 other-reviewer-col">Nadir Petersen</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 other-reviewer-col">Nile Wharton</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 other-reviewer-col">Cairon Greig</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 other-reviewer-col">Morgan Kendall</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 other-reviewer-col">Kit Foster</div>
+            </div>
+            <h1 class="committees-h1">Committees</h1>
+            <div class="row d-flex">
+                <!-- Committees Division -->
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-division">Advisory Board</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-division">Chairman</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-division">Secretary</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-division">Coordinator</div>
+                <!-- Commitees Member -->
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-member">Brittany Ratliff</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-member">Kalvin Farmer</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-member">Madeleine Steadman</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-member">Reema Peterson</div>
+                <!-- Commitees Member -->
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-member">Glenn Potter</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-member">Sullivan Mack</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-member">Ajwa Dodd</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-member">Derrick Thornton</div>
+                <!-- Commitees Member -->
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-member">Dhruv Johns</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-member">Rowena Blundell</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-member">Rohit Monaghan</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 committees-member">Aarav Crouch</div>
             </div>
         </div>
     </section>

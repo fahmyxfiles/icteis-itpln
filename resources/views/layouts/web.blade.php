@@ -25,6 +25,15 @@
   <!-- FAVICON -->
   <link href="images/favicon.png" rel="shortcut icon">
 
+  <style>
+    body {
+      font-family: Satoshi,sans-serif !important;
+    }
+  </style>
+  @if(!empty($styles))
+  {{ $styles }}
+  @endif
+
 </head>
 
 <body class="body-wrapper">
