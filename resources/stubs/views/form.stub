@@ -1,0 +1,9 @@
+<div class="box box-info padding-1">
+    <div class="box-body">
+        {{form}}
+    </div>
+    <div class="box-footer mt20">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="{{ route('{{modelRoute}}.index') }}" class="btn btn-danger">Back</a>
+    </div>
+</div>

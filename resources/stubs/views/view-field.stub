@@ -1,0 +1,6 @@
+        <div class="mb-3">
+            <label for="validation{{column}}" class="form-label">{{ Form::label('{{column}}') }}</label>
+            <div class="input-group has-validation">
+                {{ Form::text('{{column}}', ${{modelNameLowerCase}}->{{column}}, ['disabled' => 'true', 'class' => 'form-control disabled']) }}
+            </div>
+        </div>

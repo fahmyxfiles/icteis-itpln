@@ -1,0 +1,7 @@
+        <div class="mb-3">
+            <label for="validation{{column}}" class="form-label">{{ Form::label('{{column}}') }}</label>
+            <div class="input-group has-validation">
+                {{ Form::text('{{column}}', ${{modelNameLowerCase}}->{{column}}, ['class' => 'form-control' . ($errors->has('{{column}}') ? ' is-invalid' : ''), 'aria-describedby' => 'inputGroupPrepend', 'id' => 'validation{{column}}', 'placeholder' => '{{title}}']) }}
+                {!! $errors->first('{{column}}', '<div class="invalid-feedback">:message</div>') !!}
+            </div>
+        </div>
