@@ -61,7 +61,7 @@
 				<div class="text-center">
 					<h4>@setting('web.call-for-paper.topic-of-interests.title')</h4>
                     <p>@setting('web.call-for-paper.topic-of-interests.subtitle')</p>
-					<div class="row">
+					<div class="row mt-5">
 						@foreach($topic_of_interests as $index => $topic_of_interest)
 						<div class="col-md-12 mb-3">
 							<div class="card" style="background-color: #f4f4f4;">
