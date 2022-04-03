@@ -69,8 +69,8 @@ Route::group(['prefix' => 'admin'], function(){
         Route::resource('documents', DocumentController::class);
         Route::resource('guidelines', GuidelineController::class);
 
-        //Route::resource('publication-fields', PublicationFieldController::class);
-        //Route::resource('publication-tags', PublicationTagController::class);
+        Route::resource('publication-fields', PublicationFieldController::class);
+        Route::resource('publication-tags', PublicationTagController::class);
         Route::resource('publications', PublicationController::class);
     });
     require __DIR__ . '/auth.php';
