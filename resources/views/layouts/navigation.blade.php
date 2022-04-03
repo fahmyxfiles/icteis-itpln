@@ -164,14 +164,7 @@
                         </x-slot>
 
                         <x-slot name="content">
-                            <!--
-                            <x-dropdown-link :href="route('publication-fields.index')" :class="(request()->routeIs('publication-fields.*') ?? false) ? 'text-primary':''">
-                                Publication Fields
-                            </x-dropdown-link>
-                            <x-dropdown-link :href="route('publication-tags.index')" :class="(request()->routeIs('publication-tags.*') ?? false) ? 'text-primary':''">
-                                Publication Tag
-                            </x-dropdown-link>
-                        -->
+                            
                             <x-dropdown-link :href="route('publications.index')" :class="(request()->routeIs('publications.*') ?? false) ? 'text-primary':''">
                                 Publication
                             </x-dropdown-link>
