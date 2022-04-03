@@ -38,7 +38,7 @@
                   </div>
                   <div class="col-md-8 col-8">
                     <div style="background: #fbfaf9;padding: 28px;">
-                        <div class="d-flex">
+                        <div class="d-flex justify-content-between">
                             <p style="color: #1e2029;font-size: 20px;font-style: normal;font-weight: 500;line-height: 28px;">{{$publication->title}}</p>
                             <p class="links accreditated d-flex align-items-center" style="gap: 10px;"><img src="{{ asset('images/accreditated.svg') }}" alt="accreditated"> Accredited</p>
                         </div>
