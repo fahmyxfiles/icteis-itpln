@@ -92,7 +92,7 @@
 			<div class="col-lg-12 col-md-12 align-self-center">
 				<div class="card" style="background-color: #f4f4f4;">
 					<div class="card-body">
-						<div class="row">
+						<div class="row align-items-center">
 							<div class="col-lg-6 col-md-12 text-center">
 								<h5 class="card-title" style="font-style: normal;font-weight:600;">@setting('web.call-for-paper.submit.title')</h5>
 								<p class="card-text" style="color: rgba(30,32,41,.8);font-size: 16px;line-height: 28px;">@setting('web.call-for-paper.submit.subtitle')</p>
