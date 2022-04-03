@@ -35,6 +35,8 @@ class Guideline extends Model
      */
     protected $fillable = ['name','published','content'];
 
-
+    public function getRouteParam(){
+      return ['id_slug' => $this->id . '-' . str_slug($this->name)];
+    }
 
 }

@@ -41,6 +41,8 @@ class Document extends Model
      */
     protected $fillable = ['published','name','file_path'];
 
-
+    public function getRouteParam(){
+      return ['id_slug' => $this->id . '-' . str_slug($this->name)];
+    }
 
 }

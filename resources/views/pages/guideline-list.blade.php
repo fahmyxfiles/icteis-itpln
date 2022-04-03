@@ -1,15 +1,15 @@
 <x-web-layout>
-    <x-slot name="title">All Documents</x-slot>
+    <x-slot name="title">All Guidelines</x-slot>
     <section class="page-title bg-title overlay-dark">
         <div class="container">
         <div class="row">
             <div class="col-12 text-center">
             <div class="title">
-                <h3>All Documents</h3>
+                <h3>All Guidelines</h3>
             </div>
             <ol class="breadcrumb p-0 m-0">
                 <li class="breadcrumb-item"><a href="{{ route('web.home') }}">Home</a></li>
-                <li class="breadcrumb-item active">Documents</li>
+                <li class="breadcrumb-item active">Guideline</li>
             </ol>
             </div>
         </div>
@@ -25,10 +25,9 @@
                             <li class="headings">
                                 <div class="time">No</div>
                                 <div class="speaker">Name</div>
-                                <div class="subject">Download</div>
                             </li>
                             <!-- Schedule Details -->
-                            @foreach($documents as $document)
+                            @foreach($guidelines as $guideline)
                             <li class="schedule-details">
                                 <div class="block">
                                     <!-- time -->
@@ -37,10 +36,8 @@
                                     </div>
                                     <!-- Speaker -->
                                     <div class="speaker">
-                                      <span class="name" style="margin-left: 0px;">{{ $document->name }}</span>
+                                      <span class="name" style="margin-left: 0px;"><a href="{{ route('web.guidelines', $guideline->getRouteParam()) }}">{{ $guideline->name }}</a></span>
                                     </div>
-                                    <!-- Subject -->
-                                    <div class="subject"><a href="{{ route('web.documents', $document->getRouteParam()) }}">{{basename($document->file_path) }}</a></div>
                                 </div>
                             </li>
                             @endforeach

@@ -41,6 +41,9 @@ Route::get('/call-for-paper', [WebController::class, 'call_for_paper'])->name('w
 Route::get('/guidelines/{id_slug?}', [WebController::class, 'guidelines'])->name('web.guidelines');
 Route::get('/documents/{id_slug?}', [WebController::class, 'documents'])->name('web.documents');
 
+Route::get('/fee', [WebController::class, 'fee'])->name('web.fee');
+Route::get('/publications/{id_slug?}', [WebController::class, 'publications'])->name('web.publications');
+
 Route::group(['prefix' => 'admin'], function(){
     //All the routes that belongs to the group goes here
     Route::middleware('auth')->group(function () {

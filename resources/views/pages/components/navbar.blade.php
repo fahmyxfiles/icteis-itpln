@@ -27,24 +27,24 @@
             <a class="nav-link" href="#" data-toggle="dropdown">Guidelines<span>/</span></a>
               <!-- Dropdown list -->
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="aboutus.html">Abstract Guideline</a>
-                <a class="dropdown-item" href="single-speaker.html">Full Paper Guideline</a>
-                <a class="dropdown-item" href="gallery.html">Presentation Guideline</a>
-                <a class="dropdown-item" href="gallery.html">All Guidelines</a>
+                @foreach(\App\Models\Guideline::where('published', 'published')->orderBy('updated_at', 'asc')->take(3)->get() as $latestGuideline)
+                <a class="dropdown-item" href="{{ route('web.guidelines', $latestGuideline->getRouteParam()) }}">{{$latestGuideline->name}}</a>
+                @endforeach
+                <a class="dropdown-item" href="{{ route('web.guidelines')}}">All Guidelines</a>
               </div>
           </li>
           <li class="nav-item dropdown dropdown-slide">
             <a class="nav-link" href="#" data-toggle="dropdown">Documents<span>/</span></a>
               <!-- Dropdown list -->
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="gallery.html">Article Preparation</a>
-                <a class="dropdown-item" href="gallery-2.html">Paper Template</a>
-                <a class="dropdown-item" href="testimonial.html">Copyright Checklist</a>
-                <a class="dropdown-item" href="gallery.html">All Documents</a>
+                @foreach(\App\Models\Document::where('published', 'published')->orderBy('updated_at', 'asc')->take(3)->get() as $latestDocument)
+                <a class="dropdown-item" href="{{ route('web.documents', $latestDocument->getRouteParam())}}">{{$latestDocument->name}}</a>
+                @endforeach
+                <a class="dropdown-item" href="{{ route('web.documents')}}">All Documents</a>
               </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="schedule.html">Fees<span>/</span></a>
+            <a class="nav-link" href="{{ route('web.fee')}}">Fees<span>/</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="sponsors.html">Publication</a>
