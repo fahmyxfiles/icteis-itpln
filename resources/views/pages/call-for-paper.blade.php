@@ -63,9 +63,9 @@
                     <p>@setting('web.call-for-paper.topic-of-interests.subtitle')</p>
 					<div class="row">
 						@foreach($topic_of_interests as $index => $topic_of_interest)
-						<div class="@if(($index%3) == 1 || ($index%3) == 2) col-6 @else col-12 @endif mt-3">
+						<div class="col-md-12 mb-3">
 							<div class="card" style="background-color: #f4f4f4;">
-								<div class="card-body" style="@if(($index%3) == 1 || ($index%3) == 2)  @else padding: 1.25rem 130px @endif">
+								<div class="card-body">
 									<h5 class="card-title" style="font-style: normal;font-weight:600;">{{$topic_of_interest->name}}</h5>
 									<p class="card-text" style="color: rgba(30,32,41,.8);font-size: 16px;line-height: 28px;">{{$topic_of_interest->description}}</p>
 									<div class="row mt-3 text-left">
@@ -92,14 +92,14 @@
 			<div class="col-lg-12 col-md-12 align-self-center">
 				<div class="card" style="background-color: #f4f4f4;">
 					<div class="card-body">
-						<div class="d-flex justify-content-between">
-							<div class="" style="padding: 100px;">
+						<div class="row">
+							<div class="col-lg-6 col-md-12 text-center">
 								<h5 class="card-title" style="font-style: normal;font-weight:600;">@setting('web.call-for-paper.submit.title')</h5>
 								<p class="card-text" style="color: rgba(30,32,41,.8);font-size: 16px;line-height: 28px;">@setting('web.call-for-paper.submit.subtitle')</p>
 								<a target="_blank" href="@setting('web.call-for-paper.submit.url')" class="btn btn-primary btn-lg mt-3">Submit Now</a>
 							</div>
-							<div class="">
-								<img src="{{asset('images/submitpaperimage.svg')}}" alt="Submit Paper"/>
+							<div class="col-lg-6 col-md-12 mt-3">
+								<img src="{{asset('images/submitpaperimage.svg')}}" style="width: 100%" alt="Submit Paper"/>
 							</div>
 						</div>
 					</div>
