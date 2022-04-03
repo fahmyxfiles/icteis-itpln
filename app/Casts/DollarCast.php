@@ -2,12 +2,12 @@
 namespace App\Casts;
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 
-class RupiahCast implements CastsAttributes
+class DollarCast implements CastsAttributes
 {
 
     public function get($model, string $key, $value, array $attributes)
     {
-        return 'Rp. ' . number_format($value, 0, ',', '.');
+        return '$ ' . number_format($value, 2, '.', ',');
     }
 
     public function set($model, string $key, $value, array $attributes)

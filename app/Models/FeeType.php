@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-use App\Casts\RupiahCast;
+use App\Casts\DollarCast;
 
 /**
  * Class FeeType
@@ -38,7 +38,7 @@ class FeeType extends Model
     protected $fillable = ['type','description','price'];
 
     protected $casts = [
-      'price' => RupiahCast::class,
+      'price' => DollarCast::class,
     ];
 
 

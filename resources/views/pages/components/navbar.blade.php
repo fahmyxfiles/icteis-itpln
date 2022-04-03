@@ -47,7 +47,7 @@
             <a class="nav-link" href="{{ route('web.fee')}}">Fees<span>/</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sponsors.html">Publication</a>
+            <a class="nav-link" href="{{ route('web.publications')}}">Publication</a>
           </li>
         </ul>
         <a href="@setting('web.call-for-paper.submit.url')" target="_blank" class="ticket">

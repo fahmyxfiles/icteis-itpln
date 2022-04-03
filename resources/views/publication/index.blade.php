@@ -49,11 +49,10 @@
                                                         
                                             <td>{{ $publication->publication_field->name }}</td>
 											<td>{{ $publication->title }}</td>
-											<td>{{ $publication->cover_image }}</td>
 											<td>{{ $publication->doi_prefix }}</td>
 											<td>{{ $publication->p_issn }}</td>
 											<td>{{ $publication->e_issn }}</td>
-											<td>{{ $publication->published_date }}</td>
+											<td>{{ $publication->published_date->format('d/m/Y') }}</td>
 
                                                         <td>
                                                             <form action="{{ route('publications.destroy',$publication->id) }}" method="POST" onsubmit="return confirmDelete(this);">

@@ -15,6 +15,8 @@ use App\Models\TopicOfInterest;
 use App\Models\Guideline;
 use App\Models\Document;
 use App\Models\FeeType;
+use App\Models\Publication;
+use App\Models\PublicationField;
 
 
 use Illuminate\Support\Str;
@@ -115,7 +117,22 @@ class WebController extends Controller
         return view('pages.fee', compact('feetypes'));
 
     }
-    public function publications(Request $request){
-
+    public function publications(Request $request, $id_slug = null){
+        if ($id_slug)
+        {
+            $id = Str::of($id_slug)->explode("-")[0];
+            $publication = Publication::find($id);
+            if($publication)
+            {
+                return view('pages.publication-show', compact('publication'));
+            }
+            else{
+                abort(404);
+            }
+        }
+        else {
+            $publication_fields = PublicationField::all();
+            return view('pages.publication-list', compact('publication_fields'));
+        }
     }
 }

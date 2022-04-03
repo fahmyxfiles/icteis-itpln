@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Publication;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
+
+use Image;
 
 /**
  * Class PublicationController
@@ -43,9 +47,25 @@ class PublicationController extends Controller
      */
     public function store(Request $request)
     {
-        request()->validate(Publication::$rules);
+        request()->validate(Publication::$createRules);
 
-        $publication = Publication::create($request->all());
+        $cover_image = $request->file('cover_image');
+        $filename = sha1($request->input('name') . Str::random(20)).'.jpg'; 
+        $cover_image_filepath = "images/publication/".$filename;
+        Storage::disk('public')->makeDirectory(dirname($cover_image_filepath));
+        $resizeImage = Image::make($cover_image)->fit(363, 513, function ($constraint) {
+            $constraint->upsize();
+        })->encode('jpg', 100)->save(Storage::disk('public')->path($cover_image_filepath));
+
+        $data = $request->all();
+        unset($data['cover_image']);
+        $data['cover_image'] = $cover_image_filepath;
+
+        $publication = Publication::create($data);
+
+        if($request->has('publication_tag_id')){
+            $publication->publication_tags()->sync($request->input('publication_tag_id'));
+        }
 
         return redirect()->route('publications.index')
             ->with('success', 'Publication created successfully.');
@@ -86,9 +106,26 @@ class PublicationController extends Controller
      */
     public function update(Request $request, Publication $publication)
     {
-        request()->validate(Publication::$rules);
+        request()->validate(Publication::$updateRules);
 
-        $publication->update($request->all());
+        $data = $request->all();
+        if(request()->has('cover_image')){
+            $cover_image = $request->file('cover_image');
+            $cover_image_filepath = $publication->cover_image;
+            Storage::disk('public')->makeDirectory(dirname($cover_image_filepath));
+            $resizeImage = Image::make($cover_image)->fit(363, 513, function ($constraint) {
+                $constraint->upsize();
+            })->encode('jpg', 100)->save(Storage::disk('public')->path($cover_image_filepath));
+
+            unset($data['cover_image']);
+            $data['cover_image'] = $cover_image_filepath;
+        }
+
+        if($request->has('publication_tag_id')){
+            $publication->publication_tags()->sync($request->input('publication_tag_id'));
+        }
+
+        $publication->update($data);
 
         return redirect()->route('publications.index')
             ->with('success', 'Publication updated successfully');
@@ -101,7 +138,10 @@ class PublicationController extends Controller
      */
     public function destroy($id)
     {
-        $publication = Publication::find($id)->delete();
+        $publication = Publication::find($id);
+        unlink(Storage::disk('public')->path($publication->cover_image));
+        $publication->publication_tags()->detach();
+        $publication->delete();
 
         return redirect()->route('publications.index')
             ->with('success', 'Publication deleted successfully');

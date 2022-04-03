@@ -18,7 +18,12 @@ class SettingController extends Controller
      */
     public function index()
     {
-        $settings = Setting::paginate();
+        if(!empty(request()->input('group'))){
+            $settings = Setting::where('key', 'LIKE', request()->input('group') . '%')->paginate();
+        }
+        else {
+            $settings = Setting::paginate();
+        }
 
         return view('setting.index', compact('settings'))
             ->with('i', (request()->input('page', 1) - 1) * $settings->perPage());

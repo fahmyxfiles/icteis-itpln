@@ -9,6 +9,14 @@
             </div>
         </div>
 
+        <div class="mb-3">
+            <label for="validationdescription" class="form-label">{{ Form::label('description') }}</label>
+            <div class="input-group has-validation">
+                {{ Form::text('description', $publicationField->description, ['class' => 'form-control' . ($errors->has('description') ? ' is-invalid' : ''), 'aria-describedby' => 'inputGroupPrepend', 'id' => 'validationdescription', 'placeholder' => 'description']) }}
+                {!! $errors->first('description', '<div class="invalid-feedback">:message</div>') !!}
+            </div>
+        </div>
+
     </div>
     <div class="box-footer mt20">
         <button type="submit" class="btn btn-primary">Submit</button>

@@ -20,6 +20,7 @@ class PublicationField extends Model
     
     static $rules = [
 		'name' => 'required',
+		'description' => 'required',
     ];
 
     protected $perPage = 20;
@@ -29,7 +30,7 @@ class PublicationField extends Model
      *
      * @var array
      */
-    protected $fillable = ['name'];
+    protected $fillable = ['name', 'description'];
 
     public function publications()
     {

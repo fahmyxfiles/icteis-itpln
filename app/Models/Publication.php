@@ -26,14 +26,28 @@ use Illuminate\Database\Eloquent\Model;
 class Publication extends Model
 {
     
-    static $rules = [
-		'title' => 'required',
-		'publication_field_id' => 'required',
-		'cover_image' => 'required',
-		'description_body' => 'required',
-		'published_date' => 'required',
-		'url' => 'required',
+    static $createRules = [
+      'title' => 'required',
+      'publication_field_id' => 'required',
+      'cover_image' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
+      'description_body' => 'required',
+      'current_issue' => 'required',
+      'published_date' => 'required',
+      'url' => 'required',
     ];
+    static $updateRules = [
+      'title' => 'required',
+      'publication_field_id' => 'required',
+      'cover_image' => 'file|image|mimes:jpeg,png,jpg|max:2048',
+      'description_body' => 'required',
+      'current_issue' => 'required',
+      'published_date' => 'required',
+      'url' => 'required',
+      ];
+
+      protected $casts = [
+        'published_date' => 'datetime:Y-m-d',
+      ];
 
     protected $perPage = 20;
 
@@ -42,7 +56,15 @@ class Publication extends Model
      *
      * @var array
      */
-    protected $fillable = ['title','publication_field_id','cover_image','description_body','doi_prefix','p_issn','e_issn','published_date','url'];
+    protected $fillable = ['title','publication_field_id','cover_image','description_body','current_issue','doi_prefix','p_issn','e_issn','published_date','url'];
+
+    public function all_publication_fields(){
+      return PublicationField::all();
+    }
+
+    public function all_publication_tags(){
+      return PublicationTag::all();
+    }
 
     public function publication_field()
     {

@@ -34,6 +34,12 @@
                 {{ Form::text('name', $publicationField->name, ['disabled' => 'true', 'class' => 'form-control disabled']) }}
             </div>
         </div>
+        <div class="mb-3">
+            <label for="validationdescription" class="form-label">{{ Form::label('description') }}</label>
+            <div class="input-group has-validation">
+                {{ Form::text('description', $publicationField->description, ['disabled' => 'true', 'class' => 'form-control disabled']) }}
+            </div>
+        </div>
 
                                 </div>
                             </div>

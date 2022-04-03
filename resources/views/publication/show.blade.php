@@ -35,21 +35,29 @@
             </div>
         </div>
         <div class="mb-3">
-            <label for="validationpublication_field_id" class="form-label">{{ Form::label('publication_field_id') }}</label>
+            <label for="validationpublication_field_id" class="form-label">Publication Field</label>
             <div class="input-group has-validation">
-                {{ Form::text('publication_field_id', $publication->publication_field_id, ['disabled' => 'true', 'class' => 'form-control disabled']) }}
+                {{ Form::text('publication_field_id', $publication->publication_field->name, ['disabled' => 'true', 'class' => 'form-control disabled']) }}
             </div>
         </div>
         <div class="mb-3">
             <label for="validationcover_image" class="form-label">{{ Form::label('cover_image') }}</label>
-            <div class="input-group has-validation">
-                {{ Form::text('cover_image', $publication->cover_image, ['disabled' => 'true', 'class' => 'form-control disabled']) }}
-            </div>
+            @if(!empty($publication->cover_image))
+            <img id="preview" src="{{ asset('storage/' . $publication->cover_image )}}" class="img-thumbnail" style="width: 363px" alt="Cover Image">
+            @else
+            <img id="preview" src="https://via.placeholder.com/363x513.jpg?text=363x513" class="img-thumbnail" style="width: 363px" alt="Cover Image Example">
+            @endif
         </div>
         <div class="mb-3">
             <label for="validationdescription_body" class="form-label">{{ Form::label('description_body') }}</label>
             <div class="input-group has-validation">
-                {{ Form::text('description_body', $publication->description_body, ['disabled' => 'true', 'class' => 'form-control disabled']) }}
+                {{ Form::textarea('description_body', $publication->description_body, ['disabled' => 'true', 'class' => 'form-control disabled']) }}
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="validationcurrent_issue" class="form-label">{{ Form::label('current_issue') }}</label>
+            <div class="input-group has-validation">
+                {{ Form::textarea('current_issue', $publication->current_issue, ['disabled' => 'true', 'class' => 'form-control disabled']) }}
             </div>
         </div>
         <div class="mb-3">
@@ -73,13 +81,28 @@
         <div class="mb-3">
             <label for="validationpublished_date" class="form-label">{{ Form::label('published_date') }}</label>
             <div class="input-group has-validation">
-                {{ Form::text('published_date', $publication->published_date, ['disabled' => 'true', 'class' => 'form-control disabled']) }}
+                {{ Form::text('published_date', $publication->published_date->format('d/m/Y'), ['disabled' => 'true', 'class' => 'form-control disabled']) }}
             </div>
         </div>
         <div class="mb-3">
             <label for="validationurl" class="form-label">{{ Form::label('url') }}</label>
             <div class="input-group has-validation">
                 {{ Form::text('url', $publication->url, ['disabled' => 'true', 'class' => 'form-control disabled']) }}
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="validationurl" class="form-label">Tags</label>
+            <div class="row">
+                @foreach($publication->all_publication_tags() as $publication_tag)
+                <div class="col-md-2">
+                    <div class="form-check">
+                        <input class="form-check-input" name="publication_tag_id[]" type="checkbox" value="{{ $publication_tag->id }}" id="flex-check-{{ $publication_tag->id }}" @if(in_array($publication_tag->id, $publication->publication_tags->pluck('id')->toArray())) checked @endif disabled>
+                        <label class="form-check-label" for="flex-check-{{ $publication_tag->id }}">
+                          {{ $publication_tag->tag }}
+                        </label>
+                    </div>
+                </div>
+                @endforeach
             </div>
         </div>
 

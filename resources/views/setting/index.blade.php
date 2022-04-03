@@ -10,10 +10,23 @@
                 <div class="p-6 bg-white border-b border-gray-200">
                     <div class="row">
                         <div class="col-sm-12">
+                            <ul class="nav nav-pills mb-3">
+                                <li class="nav-item">
+                                    <a class="nav-link {{(empty(request()->input('group')) ?? false) ? 'active':''}}" href="{{ route('settings.index') }}">All</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link {{((request()->input('group') == "web.home") ?? false) ? 'active':''}}" href="{{ route('settings.index', ['group' => 'web.home']) }}">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link {{((request()->input('group') == "web.call-for-paper") ?? false) ? 'active':''}}" href="{{ route('settings.index', ['group' => 'web.call-for-paper']) }}">Call For Paper</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link {{((request()->input('group') == "web.fee") ?? false) ? 'active':''}}" href="{{ route('settings.index', ['group' => 'web.fee']) }}">Fee</a>
+                                </li>
+                            </ul>
                             <div class="card">
                                 <div class="card-header">
                                     <div style="display: flex; justify-content: space-between; align-items: center;">
-
                                         <span id="card_title">
                                             {{ __('Setting') }}
                                         </span>
@@ -31,10 +44,8 @@
                                             <thead class="thead">
                                                 <tr>
                                                     <th>No</th>
-                                                    
-										<th>Key</th>
-										<th>Type</th>
-
+                                                    <th>Key</th>
+                                                    <th>Type</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
