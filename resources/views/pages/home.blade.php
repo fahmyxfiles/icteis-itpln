@@ -131,7 +131,7 @@
                         <div class="image">
                             <img src="{{ asset('storage/' . $speaker->profile_photo) }}" alt="speaker"
                                 class="img-fluid">
-                            @if(empty($speaker->speaker_social_profiles))
+                            @if(!empty($speaker->speaker_social_profiles))
                             <div class="primary-overlay"></div>
                             <div class="socials">
                                 <ul class="list-inline">
@@ -178,7 +178,7 @@
                         <div class="image">
                             <img src="{{ asset('storage/' . $reviewer->profile_photo) }}" alt="speaker"
                                 class="img-fluid">
-                                @if(empty($reviewer->reviewer_social_profiles))
+                                @if(!empty($reviewer->reviewer_social_profiles))
                             <div class="primary-overlay"></div>
                             <div class="socials">
                                 <ul class="list-inline">
