@@ -131,8 +131,8 @@
                         <div class="image">
                             <img src="{{ asset('storage/' . $speaker->profile_photo) }}" alt="speaker"
                                 class="img-fluid">
-                            <div class="primary-overlay"></div>
                             @if(empty($reviewer->reviewer_social_profiles))
+                            <div class="primary-overlay"></div>
                             <div class="socials">
                                 <ul class="list-inline">
                                     @foreach($speaker->speaker_social_profiles as $speaker_social_profile)
@@ -178,8 +178,8 @@
                         <div class="image">
                             <img src="{{ asset('storage/' . $reviewer->profile_photo) }}" alt="speaker"
                                 class="img-fluid">
+                                @if(empty($reviewer->reviewer_social_profiles))
                             <div class="primary-overlay"></div>
-                            @if(empty($reviewer->reviewer_social_profiles))
                             <div class="socials">
                                 <ul class="list-inline">
                                     @foreach($reviewer->reviewer_social_profiles as $reviewer_social_profile)
