@@ -177,6 +177,7 @@
                             <img src="{{ asset('storage/' . $reviewer->profile_photo) }}" alt="speaker"
                                 class="img-fluid">
                             <div class="primary-overlay"></div>
+                            @if(empty($reviewer->reviewer_social_profiles))
                             <div class="socials">
                                 <ul class="list-inline">
                                     @foreach($reviewer->reviewer_social_profiles as $reviewer_social_profile)
@@ -184,6 +185,7 @@
                                     @endforeach
                                 </ul>
                             </div>
+                            @endif
                         </div>
                         <div class="content text-center">
                             <h5 style="min-height: 4rem;"><a href="{{ route('web.reviewers', $reviewer->getRouteParam()) }}">{{$reviewer->name}}</a></h5>
