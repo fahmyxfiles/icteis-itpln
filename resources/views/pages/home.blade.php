@@ -132,6 +132,7 @@
                             <img src="{{ asset('storage/' . $speaker->profile_photo) }}" alt="speaker"
                                 class="img-fluid">
                             <div class="primary-overlay"></div>
+                            @if(empty($reviewer->reviewer_social_profiles))
                             <div class="socials">
                                 <ul class="list-inline">
                                     @foreach($speaker->speaker_social_profiles as $speaker_social_profile)
@@ -139,6 +140,7 @@
                                     @endforeach
                                 </ul>
                             </div>
+                            @endif
                         </div>
                         <div class="content text-center">
                             <h5 style="min-height: 4rem;"><a href="{{ route('web.speakers', $speaker->getRouteParam()) }}">{{$speaker->name}}</a></h5>
