@@ -43,6 +43,7 @@
                 <div class="details">
                     <p>{{$reviewer->biodata}}</p>
                 </div>
+                @if(empty($reviewer->reviewer_social_profiles))
                 <div class="social-profiles">
                     <h5>Social Profiles</h5>
                     <ul class="list-inline social-list">
@@ -53,6 +54,7 @@
                     @endforeach
                     </ul>
                 </div>
+                @endif
                 </div>
             </div>
             </div>
