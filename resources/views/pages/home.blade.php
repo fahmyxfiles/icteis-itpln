@@ -141,7 +141,7 @@
                             </div>
                         </div>
                         <div class="content text-center">
-                            <h5><a href="{{ route('web.speakers', $speaker->getRouteParam()) }}">{{$speaker->name}}</a></h5>
+                            <h5 style="min-height: 4rem;"><a href="{{ route('web.speakers', $speaker->getRouteParam()) }}">{{$speaker->name}}</a></h5>
                             <p>{{$speaker->organization}}</p>
                         </div>
                     </div>
@@ -186,7 +186,7 @@
                             </div>
                         </div>
                         <div class="content text-center">
-                            <h5><a href="{{ route('web.reviewers', $reviewer->getRouteParam()) }}">{{$reviewer->name}}</a></h5>
+                            <h5 style="min-height: 4rem;"><a href="{{ route('web.reviewers', $reviewer->getRouteParam()) }}">{{$reviewer->name}}</a></h5>
                             <p>{{$reviewer->organization}}</p>
                         </div>
                     </div>
@@ -197,7 +197,7 @@
             <h4 class="other-reviewer-h4">Other Reviewers</h4>
             <div class="row d-flex">
                 @foreach($sideReviewers as $reviewer)
-                <div class="col-lg-3 col-md-4 col-sm-6 other-reviewer-col">{{$reviewer->name}}</div>
+                <div class="col-lg-3 col-md-4 col-sm-6 other-reviewer-col"><a href="{{ route('web.reviewers', $reviewer->getRouteParam()) }}">{{$reviewer->name}}</a></div>
                 @endforeach
             </div>
             <h1 class="committees-h1">Committees</h1>
