@@ -78,7 +78,7 @@
             @else
             <img id="preview" src="https://via.placeholder.com/256x256.jpg?text=Upload Your Image Here" class="img-thumbnail" style="width: 256px" alt="Image Preview Value">
             @endif
-            <div class="input-group has-validation">
+            <div class="input-group has-validation mt-3">
                 <input class="form-control" type="file" name="value" accept="image/*" oninput="preview.src = window.URL.createObjectURL(this.files[0])">
                 {!! $errors->first('value', '<div class="invalid-feedback">:message</div>') !!}
             </div>

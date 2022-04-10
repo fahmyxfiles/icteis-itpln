@@ -92,7 +92,7 @@ class SettingController extends Controller
     {
         $rules = Setting::$rules;
         if($request->type == "image"){
-            $rules['value'] = 'required|file|image|mimes:jpeg,png,jpg';
+            $rules['value'] = 'required|file|image|mimes:jpeg,png,jpg,svg,gif';
         }
         request()->validate($rules);
         $data = $request->all();
