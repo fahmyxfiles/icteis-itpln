@@ -15,6 +15,9 @@
                                     <a class="nav-link {{(empty(request()->input('group')) ?? false) ? 'active':''}}" href="{{ route('settings.index') }}">All</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link {{((request()->input('group') == "app") ?? false) ? 'active':''}}" href="{{ route('settings.index', ['group' => 'app']) }}">Application</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link {{((request()->input('group') == "web.home") ?? false) ? 'active':''}}" href="{{ route('settings.index', ['group' => 'web.home']) }}">Home</a>
                                 </li>
                                 <li class="nav-item">
