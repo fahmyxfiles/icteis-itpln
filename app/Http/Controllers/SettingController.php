@@ -103,7 +103,9 @@ class SettingController extends Controller
             $upload_path = "uploads/image";
             Storage::disk('public')->makeDirectory(dirname($upload_path));
             
-            unlink(Storage::disk('public')->path($setting->value));
+            if(!empty($setting->value)){
+                unlink(Storage::disk('public')->path($setting->value));
+            }
 
             $filepath = $file->storeAs($upload_path, $filename, 'public');
             $data = $request->all();
