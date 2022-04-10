@@ -90,9 +90,27 @@ class SettingController extends Controller
      */
     public function update(Request $request, Setting $setting)
     {
-        request()->validate(Setting::$rules);
+        $rules = Setting::$rules;
+        if($request->type == "image"){
+            $rules['value'] = 'required|file|image|mimes:jpeg,png,jpg';
+        }
+        request()->validate($rules);
+        $data = $request->all();
+        if($request->type == "image"){
+            $file = $request->file('value');
+            $filename = $request->file('value')->getClientOriginalName();
+            $upload_path = "uploads/image";
+            Storage::disk('public')->makeDirectory(dirname($upload_path));
+            
+            unlink(Storage::disk('public')->path($setting->value));
 
-        $setting->update($request->all());
+            $filepath = $file->storeAs($upload_path, $filename, 'public');
+            $data = $request->all();
+            unset($data['value']);
+            $data['value'] = $filepath;
+        }
+
+        $setting->update($data);
 
         return redirect()->route('settings.index')
             ->with('success', 'Setting updated successfully');
@@ -105,7 +123,11 @@ class SettingController extends Controller
      */
     public function destroy($id)
     {
-        $setting = Setting::find($id)->delete();
+        $setting = Setting::find($id);
+        if($setting->type == "image"){
+            unlink(Storage::disk('public')->path($setting->value));
+        }
+        $setting->delete();
 
         return redirect()->route('settings.index')
             ->with('success', 'Setting deleted successfully');

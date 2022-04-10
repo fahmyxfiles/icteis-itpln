@@ -31,10 +31,6 @@
                     <input class="form-check-input" type="radio" name="type" id="inlineRadio5" value="image" {{ ($setting->type == "image" ? 'checked' : '')}}>
                     <label class="form-check-label" for="inlineRadio5">Image</label>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="type" id="inlineRadio6" value="document" {{ ($setting->type == "document" ? 'checked' : '')}}>
-                    <label class="form-check-label" for="inlineRadio6">Document</label>
-                </div>
                 {!! $errors->first('type', '<div class="invalid-feedback">:message</div>') !!}
             </div>
         </div>
@@ -70,6 +66,20 @@
             <label for="validationvalue" class="form-label">{{ Form::label('value') }}</label>
             <div class="input-group has-validation">
                 <textarea id="value" name="value" class="d-none">{!! $setting->value !!}</textarea>
+                {!! $errors->first('value', '<div class="invalid-feedback">:message</div>') !!}
+            </div>
+        </div>
+        @endif
+        @if($setting->type == "image")
+        <div class="mb-3">
+            <label for="validationvalue" class="form-label">{{ Form::label('value') }}</label>
+            @if(!empty($setting->value))
+            <img id="preview" src="{{ asset('storage/' . $setting->value )}}" class="img-thumbnail" style="width: 256px" alt="Image Preview Value">
+            @else
+            <img id="preview" src="https://via.placeholder.com/256x256.jpg?text=Upload Your Image Here" class="img-thumbnail" style="width: 256px" alt="Image Preview Value">
+            @endif
+            <div class="input-group has-validation">
+                <input class="form-control" type="file" name="value" accept="image/*" oninput="preview.src = window.URL.createObjectURL(this.files[0])">
                 {!! $errors->first('value', '<div class="invalid-feedback">:message</div>') !!}
             </div>
         </div>
