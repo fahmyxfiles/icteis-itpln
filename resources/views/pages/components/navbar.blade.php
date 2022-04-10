@@ -24,7 +24,7 @@
             </a>
           </li>
           <li class="nav-item dropdown dropdown-slide">
-            <a class="nav-link" href="#" data-toggle="dropdown">Guidelines<span>/</span></a>
+            <a class="nav-link {{ Route::is('web.guidelines') ? 'active' : '' }}" href="#" data-toggle="dropdown">Guidelines<span>/</span></a>
               <!-- Dropdown list -->
               <div class="dropdown-menu">
                 @foreach(\App\Models\Guideline::where('published', 'published')->orderBy('updated_at', 'asc')->take(3)->get() as $latestGuideline)
@@ -34,7 +34,7 @@
               </div>
           </li>
           <li class="nav-item dropdown dropdown-slide">
-            <a class="nav-link" href="#" data-toggle="dropdown">Documents<span>/</span></a>
+            <a class="nav-link {{ Route::is('web.documents') ? 'active' : '' }}" href="#" data-toggle="dropdown">Documents<span>/</span></a>
               <!-- Dropdown list -->
               <div class="dropdown-menu">
                 @foreach(\App\Models\Document::where('published', 'published')->orderBy('updated_at', 'asc')->take(3)->get() as $latestDocument)
@@ -44,10 +44,10 @@
               </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('web.fee')}}">Fees<span>/</span></a>
+            <a class="nav-link {{ Route::is('web.fee') ? 'active' : '' }}" href="{{ route('web.fee')}}">Fees<span>/</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('web.publications')}}">Publication</a>
+            <a class="nav-link {{ Route::is('web.publications') ? 'active' : '' }}" href="{{ route('web.publications')}}">Publication</a>
           </li>
         </ul>
         <a href="@setting('web.call-for-paper.submit.url')" target="_blank" class="ticket">

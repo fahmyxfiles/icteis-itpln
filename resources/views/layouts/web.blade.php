@@ -23,7 +23,7 @@
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
   <!-- FAVICON -->
-  <link href="images/favicon.png" rel="shortcut icon">
+  <link href="{{ asset('storage') }}/@setting('app.favicon')" rel="shortcut icon">
 
   <style>
     body {
