@@ -128,9 +128,9 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <!-- Speaker 1 -->
                     <div class="speaker-item">
-                        <div class="image">
+                        <div class="image text-center">
                             <img src="{{ asset('storage/' . $speaker->profile_photo) }}" alt="speaker"
-                                class="img-fluid">
+                                class="img-fluid" style="min-height: 254px">
                             @if(!$speaker->speaker_social_profiles->isEmpty())
                             <div class="primary-overlay"></div>
                             <div class="socials">
